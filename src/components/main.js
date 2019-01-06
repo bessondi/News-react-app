@@ -5,14 +5,14 @@ import React, { Component } from 'react';
 import '../css/main.css';
 import GridComponent from './gridComponent';
 
-let urls = [
-    "../img/cat1.jpg",
-    "../img/cat2.jpg",
-    "../img/cat3.jpg",
-    "../img/cat4.jpg",
-    "../img/cat5.jpg",
-    "../img/cat6.jpg"
-];
+// let urls = [
+//     "../img/cat1.jpg",
+//     "../img/cat2.jpg",
+//     "../img/cat3.jpg",
+//     "../img/cat4.jpg",
+//     "../img/cat5.jpg",
+//     "../img/cat6.jpg"
+// ];
 
 
 class Main extends Component {
@@ -30,12 +30,12 @@ class Main extends Component {
                 <div className="wrapper">
                     <div className="home">
 
-                        <GridComponent />
-
-                        {/* < GridComponent / >
-                        < GridComponent / >
-                        < GridComponent / >
-                        < GridComponent / > */}
+                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name" text="Some text."/>
  
                         {/* <div className="feature shadow">
                             <h3>1 feature</h3>

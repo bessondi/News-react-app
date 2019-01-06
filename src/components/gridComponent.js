@@ -3,15 +3,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import img from '../img/gcPic.jpg';
 
-
-const GridStyle = styled.div`
-    border: 5px solid red;
-    grid-template-column: 500px;  
-`;
-// grid-column: 1 / 2;
-// grid-row: 1 / 2;
-
-
  // ${img}
  // ${props => props.img}
  // <Content img={ImagePath} />
@@ -22,25 +13,30 @@ const PictureImg = styled.div`
 
     background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    display: flex;
+	flex-direction: column;
 `;
 const TopMargin = styled.div`
     padding: 15px;
     // padding-top: 100px;
+    margin-top: auto;
+
 `;
+// const H3Margin = styled.h3`
+//     margin-top: auto;
+// `;
 
 class GridComponent extends Component {
 
     render() {
         return (
-            <GridStyle>
-               <PictureImg>
-                    <TopMargin>
-                        <h3>Title of the news</h3>
-                        <p>Some text. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                     </TopMargin>
-                </PictureImg>
-            </GridStyle>
+            <PictureImg>
+                <TopMargin>
+                    <h3>{this.props.title}</h3>
+                    <p>{this.props.text} Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </TopMargin>
+            </PictureImg>
         )
     }
 }
