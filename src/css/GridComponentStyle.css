@@ -1,0 +1,8 @@
+.pictureImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/gcPic.jpg);
+	display: flex;
+	flex-direction: column;
+}
+h3 {
+    margin-top: auto;
+}
