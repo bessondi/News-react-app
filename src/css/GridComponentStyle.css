@@ -1,8 +1,17 @@
-.pictureImg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/gcPic.jpg);
-	display: flex;
-	flex-direction: column;
+/* .image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url(../../public/images/cat1.jpg);
+} */
+
+.pictureBox {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
-h3 {
+
+.topMargin {
     margin-top: auto;
+    padding: 15px;
 }

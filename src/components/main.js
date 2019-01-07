@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import CGimg from '../img/gcPic.jpg';
-// import img from '../img/gcPic.jpg';
+// import logoUrl from '../img/cat1.jpg';
 
 import '../css/main.css';
 import GridComponent from './gridComponent';
@@ -16,26 +16,33 @@ import GridComponent from './gridComponent';
 
 
 class Main extends Component {
-// constructor() {
-//         super();
-//         this.state = {
-//             CGimg: '../img/gcPic.jpg'
-//         };
-//     }
-    //{this.state.img}
-    
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            pictures: [
+                require("../img/cat1.jpg"),
+                require("../img/cat2.jpg"),
+                require("../img/cat3.jpg"),
+                require("../img/cat4.jpg"),
+                require("../img/cat5.jpg"),
+                require("../img/cat6.jpg")
+            ]
+        }
+    }
+
     render() {
+
         return ( 
             <main>
                 <div className="wrapper">
                     <div className="home">
-
-                        <GridComponent title="Title name" text="Some text."/>
-                        <GridComponent title="Title name" text="Some text."/>
-                        <GridComponent title="Title name" text="Some text."/>
-                        <GridComponent title="Title name" text="Some text."/>
-                        <GridComponent title="Title name" text="Some text."/>
-                        <GridComponent title="Title name" text="Some text."/>
+                        <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>
+                        <GridComponent title="Title name 2" text="Some text." image={this.state.pictures[1]}/>
+                        <GridComponent title="Title name 3" text="Some text." image={this.state.pictures[2]}/>
+                        <GridComponent title="Title name 4" text="Some text." image={this.state.pictures[3]}/>
+                        <GridComponent title="Title name 5" text="Some text." image={this.state.pictures[4]}/>
+                        <GridComponent title="Title name 6" text="Some text." image={this.state.pictures[5]}/>
  
                         {/* <div className="feature shadow">
                             <h3>1 feature</h3>
@@ -69,8 +76,6 @@ class Main extends Component {
 
                     </div>
                 </div>
-
-                {/* <GridComponent /> */}
             </main>
         );
     }
