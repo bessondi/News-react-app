@@ -1,45 +1,33 @@
 import React, { Component } from 'react';
-import '../css/GridComponentStyle.css';
-
-// import styled from 'styled-components';
-// import img from '../img/gcPic.jpg';
-
- // ${img}
- // ${props => props.img}
- // <Content img={ImagePath} />
- // ${props => props.primary ? 'white' : 'black'}
-
-// const PictureImg = styled.div`
-//     // background-image: ${picture};
-//     background-position: center;
-// 	background-repeat: no-repeat;
-//     background-size: cover;
-//     display: flex;
-//     flex-direction: column;
-// `;
-
-// const TopMargin = styled.div`
-//     padding: 15px;
-//     margin-top: auto;
-// `;
-
-// const picture = {props.image};
-
+import styled from 'styled-components';
 
 class GridComponent extends Component {
-
     render() {
+
+        const { image, link, title, text } = this.props;
+
+        const PictureImg = styled.div`
+            background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8)), url(${image});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        `;
+        const MarginTop = styled.div`
+            padding: 25px;
+            margin-top: auto;
+        `;
+
         return (
-             <div className="pictureBox">
-                <img src={this.props.image} alt="lalala" width="100%" />
-                
-                <div className="topMargin">
-                    <a href={this.props.link}>
-                        <h3>{this.props.title}</h3>
-                        <p>{this.props.text} Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <PictureImg className="pictureWrap">
+                <MarginTop>
+                    <a href={link}>
+                        <h3>{title}</h3>
+                        <p>{text}</p>
                     </a>
-                </div>
-             </div>
+                </MarginTop>
+            </PictureImg>
         )
     }
 }

@@ -3,15 +3,15 @@
     url(../../public/images/cat1.jpg);
 } */
 
-.pictureBox {
+.pictureWrap {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 }
-
-.topMargin {
+.marginTop {
     margin-top: auto;
     padding: 15px;
 }
