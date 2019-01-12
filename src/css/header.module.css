@@ -1,10 +1,13 @@
 header a {
     color: #f1f1f1;
 }
+
 header {
     background-color: #a1a1a1;
 }
-nav, header ul {
+
+nav,
+header ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,6 +19,7 @@ nav, header ul {
     margin: 0 auto;
     padding: 0;
 }
+
 /* nav {
     border-top: 2px solid lightgray;
     margin-top: 10px;

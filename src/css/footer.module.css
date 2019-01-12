@@ -1,7 +1,8 @@
 footer a {
     color: #f1f1f1;
 }
-footer > div > ul {
+
+footer>div>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -12,15 +13,17 @@ footer > div > ul {
     max-width: 1200px;
     min-height: 50px;
 }
-footer > div > ul > ul > li:first-child {
+
+footer>div>ul>ul>li:first-child {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.footer-flex,
-.footer-left,
-.footer-center ul,
-.footer-right ul {
+
+.footerFlex,
+.footerLeft,
+.footerCenter ul,
+.footerRight ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -29,13 +32,17 @@ footer > div > ul > ul > li:first-child {
     margin: 0;
     padding: 0;
 }
-.footer-flex li, footer li {
+
+.footerFlex li,
+footer li {
     list-style: none;
     margin: 25px 10px;
 }
-.sectionField{
+
+.sectionField {
     background-color: #8f8f8f;
 }
+
 .sectionСolumns ul {
     padding: 0;
 }

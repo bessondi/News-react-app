@@ -7,7 +7,7 @@ class GridComponent extends Component {
         const { image, link, title, text } = this.props;
 
         const PictureImg = styled.div`
-            background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8)), url(${image});
+            background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(${image});
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

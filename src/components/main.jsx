@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GridComponent from './gridComponent';
-import '../css/main.css';
 
 import SPb1ImgSrc from "../img/SPb.jpg";
 import SPb2ImgSrc from "../img/SPb1.jpg";
@@ -8,6 +7,8 @@ import SPb3ImgSrc from "../img/SPb3.jpg";
 import SPb4ImgSrc from "../img/SPb4.jpg";
 import SPb5ImgSrc from "../img/SPb5.jpg";
 import SPb6ImgSrc from "../img/SPb6.jpg";
+import '../css/main.css';
+
 
 
 class Main extends Component {
@@ -17,24 +18,49 @@ class Main extends Component {
             pictures: [
                 SPb1ImgSrc,
                 SPb2ImgSrc,
-                SPb3ImgSrc, 
+                SPb3ImgSrc,
                 SPb4ImgSrc,
                 SPb5ImgSrc,
                 SPb6ImgSrc
             ]
+
+            //  arts: [
+            //     {
+            //         img: 'SPb1ImgSrc',
+            //         ttl: 'Title name',
+            //         txt: 'Some text.'
+            //     },
+            //     {
+            //         img: 'SPb2ImgSrc',
+            //         ttl: 'Title name 2',
+            //         txt: 'Some text 2.'
+            //     },
+            //     {
+            //         img: 'SPb3ImgSrc',
+            //         ttl: 'Title name 3',
+            //         txt: 'Some text 3.'
+            //     }
+            // ]
+
         }
     }
 
     render() {
 
-        const {pictures} = this.state;
+        const { pictures } = this.state;
+        // const {arts} = this.state;
 
-        return ( 
+        return (
             <main>
                 <div className="wrapper">
                     <div className="home">
+
+                        {/* {
+                            arts.map((img, i) => <GridComponent key={i} title={this.state.ttl} text={this.state.txt} image={this.state.img} link='#' />)
+                        }  */}
+
                         {
-                            pictures.map((imgSrc, i) => <GridComponent title={`Title name ${i+1}`} text="Some text." image={imgSrc} link='#'/>)
+                            pictures.map((imgSrc, i) => <GridComponent key={i} title={`Title name ${i + 1}`} text="Some text." image={imgSrc} link='#' />)
                         }
 
                         {/* <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>
