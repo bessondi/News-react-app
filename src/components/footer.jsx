@@ -40,12 +40,16 @@ class Footer extends Component {
 
                 <div className={footerStyle.footerFlex}>
                     <div className={footerStyle.sectionСolumns}>
+
+
                         <div className={footerStyle.footerLeft}>
                             <p>SPb-News by Dmitry Bessonov</p>
                         </div>
+
                         <div className={footerStyle.footerCenter}>
                             <SocialIcons />
                         </div>
+
                         <div className={footerStyle.footerRight}>
                             <ul>
                                 <li><a href="#s">Privacy</a></li>
@@ -53,6 +57,8 @@ class Footer extends Component {
                                 <li><a href="#s">Contact Us</a></li>
                             </ul>
                         </div>
+
+
                     </div>
                 </div>
             </footer>

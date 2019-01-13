@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import headerStyle from '../css/header.module.css';
 
+import headerStyle from '../css/header.module.css';
+import Today from "./date";
 
 class Header extends Component {
     render() {
+
         return (
             <header>
-                <div></div>
-
                 <nav>
                     <div className={headerStyle.headerLeft}></div>
                     <div className={headerStyle.headerCenter}>
@@ -19,9 +19,7 @@ class Header extends Component {
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>
-                        <span className={headerStyle.today}>
-                            <p>Сегодня</p>
-                        </span>
+                        <p>Сегодня <Today /></p>
                     </div>
                 </nav>
             </header>

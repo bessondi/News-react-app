@@ -31,10 +31,10 @@ class SocialIcons extends Component {
             <div className="socialIcons">
                 <ul>
                     {
-                        icons.map((imgSrc, i) =>
+                        icons.map((icoSrc, i) =>
                             <li key={i}>
                                 <a href={links[i]}>
-                                    <img src={imgSrc} alt="social logo"></img>
+                                    <img src={icoSrc} alt="social logo" width="25" height="25"></img>
                                 </a>
                             </li>
                         )
