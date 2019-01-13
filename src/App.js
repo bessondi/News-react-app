@@ -7,6 +7,14 @@ import Footer from './components/footer';
 
 import './App.css';
 
+// TODO:
+// добавить шрифты
+// онфокус на блоки мэйн
+// бургер меню
+
+// FIXME:
+
+
 class App extends Component {
   render() {
     return (

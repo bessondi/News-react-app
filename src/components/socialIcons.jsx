@@ -16,10 +16,10 @@ class SocialIcons extends Component {
                 SI4imgSrc
             ],
             links: [
-                "facebook.com",
-                "vk.com",
-                "instagram.com",
-                "twitter.com"
+                "https://facebook.com",
+                "https://vk.com",
+                "https://instagram.com",
+                "https://twitter.com"
             ]
         }
     }

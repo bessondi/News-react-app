@@ -25,8 +25,8 @@ class GridComponent extends Component {
             <a href={link} className={mainStyle.pictureWrap}>
                 <PictureImg>
                     <MarginTop>
-                        <h3>{title}</h3>
-                        <p>{text}</p>
+                        <h2>{title}</h2>
+                        <h3>{text}</h3>
                     </MarginTop>
                 </PictureImg>
             </a>
