@@ -7,7 +7,7 @@ import SPb3ImgSrc from "../img/SPb3.jpg";
 import SPb4ImgSrc from "../img/SPb4.jpg";
 import SPb5ImgSrc from "../img/SPb5.jpg";
 import SPb6ImgSrc from "../img/SPb6.jpg";
-import '../css/main.css';
+import mainStyle from '../css/main.module.css';
 
 
 
@@ -22,45 +22,37 @@ class Main extends Component {
                 SPb4ImgSrc,
                 SPb5ImgSrc,
                 SPb6ImgSrc
+            ],
+            titles: [
+                'Title name 1',
+                'Title name 2',
+                'Title name 3',
+                'Title name 4',
+                'Title name 5',
+                'Title name 6'
+            ],
+            texts: [
+                'Some text 1.',
+                'Some text 2.',
+                'Some text 3.',
+                'Some text 4.',
+                'Some text 5.',
+                'Some text 6.'
             ]
-
-            //  arts: [
-            //     {
-            //         img: 'SPb1ImgSrc',
-            //         ttl: 'Title name',
-            //         txt: 'Some text.'
-            //     },
-            //     {
-            //         img: 'SPb2ImgSrc',
-            //         ttl: 'Title name 2',
-            //         txt: 'Some text 2.'
-            //     },
-            //     {
-            //         img: 'SPb3ImgSrc',
-            //         ttl: 'Title name 3',
-            //         txt: 'Some text 3.'
-            //     }
-            // ]
-
         }
     }
 
     render() {
 
-        const { pictures } = this.state;
-        // const {arts} = this.state;
+        const { pictures, titles, texts } = this.state;
 
         return (
             <main>
-                <div className="wrapper">
-                    <div className="home">
-
-                        {/* {
-                            arts.map((img, i) => <GridComponent key={i} title={this.state.ttl} text={this.state.txt} image={this.state.img} link='#' />)
-                        }  */}
+                <div className={mainStyle.wrapper}>
+                    <div className={mainStyle.home}>
 
                         {
-                            pictures.map((imgSrc, i) => <GridComponent key={i} title={`Title name ${i + 1}`} text="Some text." image={imgSrc} link='#' />)
+                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} link="#s" />)
                         }
 
                         {/* <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>

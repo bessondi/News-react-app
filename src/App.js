@@ -5,7 +5,7 @@ import Main from './components/main';
 // import Article from './components/article';
 import Footer from './components/footer';
 
-// import './App.css';
+import './App.css';
 
 class App extends Component {
   render() {

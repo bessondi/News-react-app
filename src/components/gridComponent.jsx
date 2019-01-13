@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import mainStyle from '../css/main.module.css';
 
 class GridComponent extends Component {
     render() {
@@ -13,6 +14,7 @@ class GridComponent extends Component {
             background-size: cover;
             display: flex;
             flex-direction: column;
+            height: 100%;
         `;
         const MarginTop = styled.div`
             padding: 25px;
@@ -20,14 +22,14 @@ class GridComponent extends Component {
         `;
 
         return (
-            <PictureImg className="pictureWrap">
-                <MarginTop>
-                    <a href={link}>
+            <a href={link} className={mainStyle.pictureWrap}>
+                <PictureImg>
+                    <MarginTop>
                         <h3>{title}</h3>
                         <p>{text}</p>
-                    </a>
-                </MarginTop>
-            </PictureImg>
+                    </MarginTop>
+                </PictureImg>
+            </a>
         )
     }
 }

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import '../css/header.module.css';
+import headerStyle from '../css/header.module.css';
 
 
 class Header extends Component {
     render() {
-        return ( 
+        return (
             <header>
-               <div></div>
+                <div></div>
 
                 <nav>
-                    <div className="header-left"><span className="today">Сегодня</span></div>
-                    <div className="header-center">
+                    <div className={headerStyle.headerLeft}></div>
+                    <div className={headerStyle.headerCenter}>
                         <ul>
                             <li><a href="#s">Text 1</a></li>
                             <li><a href="#s">Text 2</a></li>
@@ -18,7 +18,11 @@ class Header extends Component {
                             <li><a href="#s">Text 4</a></li>
                         </ul>
                     </div>
-                    <div className="header-right">icons</div>
+                    <div className={headerStyle.headerRight}>
+                        <span className={headerStyle.today}>
+                            <p>Сегодня</p>
+                        </span>
+                    </div>
                 </nav>
             </header>
         );
