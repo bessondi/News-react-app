@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import mainStyle from '../css/main.module.css';
+import mainStyle from './main.module.css';
 
 class GridComponent extends Component {
     render() {

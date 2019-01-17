@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import GridComponent from './gridComponent';
 
-import SPb1ImgSrc from "../img/SPb.jpg";
-import SPb2ImgSrc from "../img/SPb1.jpg";
-import SPb3ImgSrc from "../img/SPb3.jpg";
-import SPb4ImgSrc from "../img/SPb4.jpg";
-import SPb5ImgSrc from "../img/SPb5.jpg";
-import SPb6ImgSrc from "../img/SPb6.jpg";
-import mainStyle from '../css/main.module.css';
+import SPb1ImgSrc from "../../img/SPb.jpg";
+import SPb2ImgSrc from "../../img/SPb1.jpg";
+import SPb3ImgSrc from "../../img/SPb3.jpg";
+import SPb4ImgSrc from "../../img/SPb4.jpg";
+import SPb5ImgSrc from "../../img/SPb5.jpg";
+import SPb6ImgSrc from "../../img/SPb6.jpg";
+import mainStyle from './main.module.css';
 
 
 

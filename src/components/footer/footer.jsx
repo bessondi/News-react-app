@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SocialIcons from './socialIcons';
 
-import footerStyle from '../css/footer.module.css';
+import footerStyle from './footer.module.css';
 
 
 class Footer extends Component {

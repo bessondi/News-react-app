@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Header from './components/header';
-import Main from './components/main';
+import Header from './components/header/header';
+import Main from './components/main/main';
 // import Article from './components/article';
-import Footer from './components/footer';
+import Footer from './components/footer/footer';
 
 import './App.css';
 

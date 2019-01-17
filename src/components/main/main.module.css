@@ -18,6 +18,11 @@ h3 {
 	grid-auto-rows: minmax(300px, auto);
 }
 
+.pictureWrap:hover {
+	transform: scale(1.01);
+	transition: transform 0.5s;
+}
+
 /* media query */
 
 /* screen > 640 px */

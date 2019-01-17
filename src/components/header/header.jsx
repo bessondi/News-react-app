@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import headerStyle from '../css/header.module.css';
+import headerStyle from './header.module.css';
 import Today from "./date";
 
 class Header extends Component {

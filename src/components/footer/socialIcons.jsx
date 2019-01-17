@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import SI1imgSrc from "../ico/fb.png";
-import SI2imgSrc from "../ico/vk.png";
-import SI3imgSrc from "../ico/inst.png";
-import SI4imgSrc from "../ico/tw.png";
+import SI1imgSrc from "../../ico/fb.png";
+import SI2imgSrc from "../../ico/vk.png";
+import SI3imgSrc from "../../ico/inst.png";
+import SI4imgSrc from "../../ico/tw.png";
 
 class SocialIcons extends Component {
     constructor(props) {
