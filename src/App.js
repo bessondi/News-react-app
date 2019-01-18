@@ -8,9 +8,7 @@ import Footer from './components/footer/footer';
 import './App.css';
 
 // TODO:
-// добавить шрифты
-// онфокус на блоки мэйн
-// бургер меню
+// бургер меню при <640
 
 // FIXME:
 

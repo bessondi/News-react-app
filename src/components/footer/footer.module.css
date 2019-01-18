@@ -14,16 +14,25 @@ footer a {
     min-height: 50px;
 }
 
-/* .footerFlex>.sectionСolumns {
-    justify-content: space-between;
-} */
 
-.sectionСolumns>ul>li:first-child {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+/* for gray sectionField */
+.fourColumns {
+    display: flex;
+    flex-direction: column;
 }
 
+.boldStyle {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px 10px 0 10px;
+}
+
+.sectionField {
+    background-color: #6b6b6b;
+}
+
+
+/* for black footerFlex */
 .footerFlex,
 .footerLeft,
 .footerCenter ul,
@@ -37,27 +46,32 @@ footer a {
     padding: 0;
 }
 
-
 .footerFlex li,
 footer li {
     list-style: none;
     margin: 25px 10px;
 }
 
-.sectionField {
-    background-color: #6b6b6b;
-}
-
 .sectionСolumns ul {
+    margin: 0;
     padding: 0;
 }
+
 
 /* media */
 /* screen > 640 px */
 @media screen and (max-width: 1024px) {
-    .footerFlex>.sectionСolumns {
+    .sectionСolumns {
         flex-direction: column;
         align-items: center;
-        margin: 10px 0;
+    }
+
+    .sectionСolumns ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boldStyle {
+        margin: 25px auto 0;
     }
 }
