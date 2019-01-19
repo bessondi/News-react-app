@@ -8,7 +8,7 @@ const FooterFlex = () => {
         <div className={footerStyle.footerFlex}>
             <div className={footerStyle.sectionСolumns}>
                 <div className={footerStyle.footerLeft}>
-                    <p>SPb-News by DB</p>
+                    <p>SPb-News by Dmitry Bessonov</p>
                 </div>
                 <div className={footerStyle.footerCenter}>
                     <SocialIcons />
