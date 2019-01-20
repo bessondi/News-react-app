@@ -33,7 +33,6 @@ header ul li {
     /* margin-left: 25px; */
 }
 
-
 .burgerBtn {
     display: none;
 }
@@ -42,7 +41,7 @@ header ul li {
 /* NAV - screen < 640 px */
 @media screen and (max-width: 640px) {
     .headerLeft, .burgerBtn {
-        margin: 0 40px;
+        margin: 0 25px;
     }
 
     nav {
