@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import Today from "./date";
 import BurgerBtn from './menuBtn/navMenu';
 
 import headerStyle from './header.module.css';
-import Today from "./date";
 
 class Header extends Component {
     render() {
@@ -11,7 +10,6 @@ class Header extends Component {
         return (
             <header>
                 <nav>
-                    <BurgerBtn />
                     <div className={headerStyle.headerLeft}></div>
                     <div className={headerStyle.headerCenter}>
                         <ul>
@@ -22,8 +20,9 @@ class Header extends Component {
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>
-                        <p>Сегодня <Today /></p>
+                        <p>Сегодня <Today/></p>
                     </div>
+                    <BurgerBtn/>
                 </nav>
             </header>
         );

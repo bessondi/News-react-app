@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import navMenuStyle from './navMenu.module.css';
+import headerStyle from "../header.module.css";
 
 class BurgerBtn extends Component {
     constructor() {
@@ -17,8 +18,8 @@ class BurgerBtn extends Component {
 
     render() {
         return (
-            <div>
-                <a href="#" className={this.state.active
+            <div className={headerStyle.burgerBtn}>
+                <a href="#s" className={this.state.active
                     ? `${navMenuStyle.menuBtn} ${navMenuStyle.menuBtnActive}`
                     : `${navMenuStyle.menuBtn}`}
                    onClick={this.toggleClass}>

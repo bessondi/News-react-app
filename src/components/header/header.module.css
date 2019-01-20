@@ -20,10 +20,6 @@ header ul {
     padding: 0;
 }
 
-/* nav {
-    border-top: 2px solid lightgray;
-    margin-top: 10px;
-} */
 header ul li {
     margin: auto 25px;
 }
@@ -37,15 +33,32 @@ header ul li {
     /* margin-left: 25px; */
 }
 
+
+.burgerBtn {
+    display: none;
+}
+
 /* media */
 /* NAV - screen < 640 px */
 @media screen and (max-width: 640px) {
+    .headerLeft, .burgerBtn {
+        margin: 0 40px;
+    }
+
     nav {
-        /* flex-direction: column; */
+        justify-content: space-between;
         align-items: center;
     }
 
     header ul {
         display: none;
+    }
+
+    .headerCenter, .headerRight {
+        display: none;
+    }
+
+    .burgerBtn {
+        display: flex;
     }
 }
