@@ -1,9 +1,10 @@
 header a, p {
-    color: #f1f1f1;
+    color: white;
+    font-size: 1.2rem;
 }
 
 header {
-    background-color: black;
+    background-color: #a8d0e6;
 }
 
 nav,
@@ -24,13 +25,23 @@ header ul li {
     margin: auto 25px;
 }
 
-.headerLeft {
-    background-image: url(../../ico/SPbLogoB.png);
-    background-position: center;
-    background-size: cover;
-    width: 30px;
-    height: 60px;
-    /* margin-left: 25px; */
+.headerLeft p {
+    font-weight: 700;
+    font-size: 2rem;
+
+    /*background-image: url(../../ico/SPbLogoB.png);*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*width: 30px;*/
+    /*height: 60px;*/
+}
+
+.headerCenter {
+    font-weight: 700;
+}
+
+.headerRight p {
+    font-weight: 700;
 }
 
 .burgerBtn {
@@ -41,7 +52,7 @@ header ul li {
 /* NAV - screen < 640 px */
 @media screen and (max-width: 640px) {
     .headerLeft, .burgerBtn {
-        margin: 0 25px;
+        margin: 0 20px;
     }
 
     nav {
@@ -59,5 +70,11 @@ header ul li {
 
     .burgerBtn {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .headerRight {
+        display: none;
     }
 }

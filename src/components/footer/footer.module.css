@@ -8,7 +8,7 @@ footer a {
     justify-content: space-around;
     margin: 0 auto;
     padding: 0;
-    color: #f1f1f1;
+    color: #24305e;
     width: 100%;
     max-width: 1200px;
     min-height: 50px;
@@ -28,7 +28,7 @@ footer a {
 }
 
 .sectionField {
-    background-color: #6b6b6b;
+    background-color: #374785;
 }
 
 
@@ -41,7 +41,7 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: #252839;
     margin: 0;
     padding: 0;
 }

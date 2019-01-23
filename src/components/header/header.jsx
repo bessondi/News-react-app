@@ -10,13 +10,13 @@ class Header extends Component {
         return (
             <header>
                 <nav>
-                    <div className={headerStyle.headerLeft}></div>
+                    <div className={headerStyle.headerLeft}><p>SPBnews</p></div>
                     <div className={headerStyle.headerCenter}>
                         <ul>
-                            <li><a href="#s">Text 1</a></li>
-                            <li><a href="#s">Text 2</a></li>
-                            <li><a href="#s">Text 3</a></li>
-                            <li><a href="#s">Text 4</a></li>
+                            <li><a href="#s">TEXT1</a></li>
+                            <li><a href="#s">TEXT2</a></li>
+                            <li><a href="#s">TEXT3</a></li>
+                            <li><a href="#s">TEXT4</a></li>
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>

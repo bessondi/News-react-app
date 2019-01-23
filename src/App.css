@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Sofia Pro';
     font-style: normal;
-    font-weight: 700;
-    src: url(./fonts/Roboto-Medium.ttf);
+    font-weight: 400;
+    src: url(./fonts/SofiaPro/SofiaProRegular.ttf);
 }
 
 .App {
-    font-family: 'roboto';
-    /* font-size: ; */
-    background-color: #f1f1f1;
+    font-family: 'Sofia Pro';
+    font-size: 1.1rem;
+    background-color: #a8d0e6;
 }

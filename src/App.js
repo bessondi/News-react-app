@@ -8,7 +8,10 @@ import './App.css';
 
 // TODO:
 // add different animation to main blocks
+// add different main pages
+// finished menuBtn
 // change social icons
+
 // FIXME:
 
 

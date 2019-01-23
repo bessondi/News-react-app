@@ -28,11 +28,21 @@ class BurgerBtn extends Component {
                         ? `${navMenuActive.listItemsActive}`
                         : `${navMenuActive.listItems}` }>
 
-                        <li><a href="#s">text1</a></li>
-                        <li><a href="#s">text2</a></li>
-                        <li><a href="#s">text3</a></li>
-                        <li><a href="#s">text4</a></li>
+                        <li><a href="#s">TEXT1</a></li>
+                        <li><a href="#s">TEXT2</a></li>
+                        <li><a href="#s">TEXT3</a></li>
+                        <li><a href="#s">TEXT4</a></li>
+
+                        <li className={navMenuActive.mailFont}>
+                            <a href="#s">hello@site.com</a>
+                        </li>
+                        <li className={navMenuActive.linksSmall}>
+                            <a href="#s">FACEBOOK</a>
+                            <a href="#s">VK</a>
+                            <a href="#s">INSTAGRAM</a>
+                        </li>
                     </ul>
+
                 </div>
 
                 <div className={headerStyle.burgerBtn}>

@@ -4,8 +4,9 @@
     height: 50px;
     position: relative;
     z-index: 10;
-    /*background-color: #333;*/
-    /*border-radius: 50%;*/
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 rgba(0,0,0,.1);
 }
 
 .menuBtn span,
@@ -18,7 +19,7 @@
     margin-left: -10px;
     width: 20px;
     height: 2px;
-    background-color: #fff;
+    background-color: gray;
 }
 
 .menuBtn span::before,
@@ -38,8 +39,8 @@
 
 .menuBtnActive {
     position: fixed;
-    top: 10px;
-    right: 25px;
+    top: 23px;
+    right: 20px;
 }
 
 .menuBtnActive span {
