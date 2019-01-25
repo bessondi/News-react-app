@@ -13,10 +13,10 @@ class Header extends Component {
                     <div className={headerStyle.headerLeft}><p>SPBnews</p></div>
                     <div className={headerStyle.headerCenter}>
                         <ul>
-                            <li><a href="#s">TEXT1</a></li>
-                            <li><a href="#s">TEXT2</a></li>
-                            <li><a href="#s">TEXT3</a></li>
-                            <li><a href="#s">TEXT4</a></li>
+                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT1</a></li>
+                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT2</a></li>
+                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT3</a></li>
+                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT4</a></li>
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>

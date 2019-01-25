@@ -9,8 +9,6 @@ import SPb5ImgSrc from "../../img/SPb5.jpg";
 import SPb6ImgSrc from "../../img/SPb6.jpg";
 import mainStyle from './main.module.css';
 
-
-
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -43,16 +41,14 @@ class Main extends Component {
     }
 
     render() {
-
         const { pictures, titles, texts } = this.state;
 
         return (
             <main>
                 <div className={mainStyle.wrapper}>
                     <div className={mainStyle.home}>
-
                         {
-                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} link="#s" />)
+                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} hidden='читать' link="#s" />)
                         }
 
                         {/* <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>

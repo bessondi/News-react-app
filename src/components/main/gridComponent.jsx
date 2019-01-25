@@ -5,7 +5,7 @@ import mainStyle from './main.module.css';
 class GridComponent extends Component {
     render() {
 
-        const { image, link, title, text } = this.props;
+        const { image, link, title, text, hidden } = this.props;
 
         const PictureImg = styled.div`
             background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(${image});
@@ -24,9 +24,10 @@ class GridComponent extends Component {
         return (
             <a href={link} className={mainStyle.pictureWrap}>
                 <PictureImg>
-                    <MarginTop>
+                    <MarginTop className={mainStyle.colorBlock}>
                         <h2>{title}</h2>
                         <h3>{text}</h3>
+                        <h3 className={mainStyle.hidden}>{hidden}</h3>
                     </MarginTop>
                 </PictureImg>
             </a>

@@ -28,16 +28,17 @@ header ul li {
 .headerLeft p {
     font-weight: 700;
     font-size: 2rem;
-
-    /*background-image: url(../../ico/SPbLogoB.png);*/
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    /*width: 30px;*/
-    /*height: 60px;*/
 }
 
 .headerCenter {
     font-weight: 700;
+}
+
+.boxBorder:hover  {
+    background-color: black;
+    color: #a8d0e6;
+    padding: 10px;
+    margin: -10px;
 }
 
 .headerRight p {
