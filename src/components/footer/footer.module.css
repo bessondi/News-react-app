@@ -29,6 +29,8 @@ footer a {
 
 .sectionField {
     background-color: #374785;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 
@@ -44,6 +46,11 @@ footer a {
     background-color: #252839;
     margin: 0;
     padding: 0;
+}
+
+.footerFlex {
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .footerFlex li,

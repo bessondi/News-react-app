@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import GridComponent from './gridComponent';
 
 import SPb1ImgSrc from "../../img/SPb.jpg";
@@ -36,19 +36,27 @@ class Main extends Component {
                 'Some text 4.',
                 'Some text 5.',
                 'Some text 6.'
+            ],
+            links: [
+                '/news/article1',
+                '/news/article2',
+                '/news/article3',
+                '/news/article4',
+                '/news/article5',
+                '/news/article6'
             ]
         }
     }
 
     render() {
-        const { pictures, titles, texts } = this.state;
+        const { pictures, titles, texts, links } = this.state;
 
         return (
             <main>
                 <div className={mainStyle.wrapper}>
                     <div className={mainStyle.home}>
                         {
-                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} hidden='читать' link="#s" />)
+                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} hidden='read' link={links[i]}/>)
                         }
 
                         {/* <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from "react-router-dom";
 
 import navMenuActive from "./nav.Menu.module.css";
 import navMenuBtnStyle from './navMenuBtn.module.css';
@@ -28,18 +29,21 @@ class BurgerBtn extends Component {
                         ? `${navMenuActive.listItemsActive}`
                         : `${navMenuActive.listItems}` }>
 
-                        <li><a href="#s">TEXT1</a></li>
-                        <li><a href="#s">TEXT2</a></li>
-                        <li><a href="#s">TEXT3</a></li>
-                        <li><a href="#s">TEXT4</a></li>
+
+                        <li><NavLink to="/news" onClick={ this.toggleClass }>НОВОСТИ</NavLink></li>
+                        <li><NavLink to="/entertainment" onClick={ this.toggleClass }>РАЗВЛЕЧЕНИЯ</NavLink></li>
+                        <li><NavLink to="/city" onClick={ this.toggleClass }>ГОРОД</NavLink></li>
+                        <li><NavLink to="/food" onClick={ this.toggleClass }>ЕДА</NavLink></li>
+
 
                         <li className={navMenuActive.mailFont}>
-                            <a href="#s">hello@site.com</a>
+                            <a href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud</a>
                         </li>
+
                         <li className={navMenuActive.linksSmall}>
-                            <a href="#s">FACEBOOK</a>
-                            <a href="#s">VK</a>
-                            <a href="#s">INSTAGRAM</a>
+                            <a href="https://www.facebook.com/bessondi">FACEBOOK</a>
+                            <a href="https://vk.com/bessondi">VK</a>
+                            <a href="https://www.instagram.com/bessondi">INSTAGRAM</a>
                         </li>
                     </ul>
 
@@ -50,9 +54,10 @@ class BurgerBtn extends Component {
                         ? `${navMenuBtnStyle.menuBtn} ${navMenuBtnStyle.menuBtnActive}`
                         : `${navMenuBtnStyle.menuBtn}` }
                        onClick={ this.toggleClass }>
-                        <span></span>
+                        <span/>
                     </a>
                 </div>
+
             </React.Fragment>
         )
     }

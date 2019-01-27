@@ -20,7 +20,8 @@ h3 {
     visibility: hidden;
     transition: 0.3s;
     opacity: 0;
-    margin-top: -50px;
+    padding: 0;
+    margin: 0;
 }
 
 .pictureWrap:hover .hidden {
@@ -29,17 +30,23 @@ h3 {
     opacity: 1;
     background-color: black;
     color: #f8e9a1;
+    margin: -10px -10px -10px 0;
     padding: 10px;
 }
 
 .pictureWrap:hover .colorBlock {
     color: black;
     background-color: #f8e9a1;
-    opacity: 0.9;
+    opacity: 0.8;
+    filter: brightness(75%);
 }
 
 .pictureWrap:hover h2, .pictureWrap:hover h3 {
     color: black;
+}
+
+.pictureWrap > div:hover {
+    filter: brightness(135%);
 }
 
 /* media query */

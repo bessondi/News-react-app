@@ -1,0 +1,67 @@
+.mainArticle {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px 50px 50px;
+    background-color: #f1f1f1;
+}
+
+.mainArticle p,
+.mainArticle h1,
+.mainArticle h2,
+.mainArticle h3 {
+    color: black;
+}
+
+.mainArticle h1 {
+    font-size: 2rem;
+}
+
+.mainArticle p {
+    font-size: 1.2rem;
+}
+
+.picArticle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* close BTN */
+.articleBtn span,
+.articleBtn span::before,
+.articleBtn span::after {
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+}
+
+.articleBtn span {
+    float: right;
+    height: 0;
+}
+
+.articleBtn span::before,
+.articleBtn span::after {
+    content: '';
+    display: block;
+}
+
+.articleBtn span::before {
+    transform: translateY(2px) translateX(25px) translateY(5px) rotate(45deg);
+
+}
+
+.articleBtn span::after {
+    transform: translateY(0px) translateX(25px) translateY(5px) rotate(-45deg);
+}
+
+@media screen and (max-width: 640px) {
+    .articleBtn span {
+        display: none;
+    }
+}

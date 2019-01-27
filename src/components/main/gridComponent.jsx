@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {NavLink} from "react-router-dom";
+
 import styled from 'styled-components';
 import mainStyle from './main.module.css';
 
@@ -22,7 +24,8 @@ class GridComponent extends Component {
         `;
 
         return (
-            <a href={link} className={mainStyle.pictureWrap}>
+            <NavLink to={link} className={mainStyle.pictureWrap}>
+                {/*<a href={`#${child.get('anchor')}`}>{child.get('anchor')}</a>*/}
                 <PictureImg>
                     <MarginTop className={mainStyle.colorBlock}>
                         <h2>{title}</h2>
@@ -30,7 +33,7 @@ class GridComponent extends Component {
                         <h3 className={mainStyle.hidden}>{hidden}</h3>
                     </MarginTop>
                 </PictureImg>
-            </a>
+            </NavLink>
         )
     }
 }

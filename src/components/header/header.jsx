@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {NavLink} from "react-router-dom";
+
 import Today from "./date";
 import BurgerBtn from './menuBtn/navMenu';
 
@@ -10,13 +12,16 @@ class Header extends Component {
         return (
             <header>
                 <nav>
-                    <div className={headerStyle.headerLeft}><p>SPBnews</p></div>
+                    <div className={headerStyle.headerLeft}>
+                        <NavLink to='/' className={headerStyle.homePage}>SPBnews</NavLink>
+                    </div>
+
                     <div className={headerStyle.headerCenter}>
                         <ul>
-                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT1</a></li>
-                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT2</a></li>
-                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT3</a></li>
-                            <li><a href="#s" className={headerStyle.boxBorder}>TEXT4</a></li>
+                            <li><NavLink to='/news' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>НОВОСТИ</NavLink></li>
+                            <li><NavLink to='/entertainment' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>РАЗВЛЕЧЕНИЯ</NavLink></li>
+                            <li><NavLink to='/city' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>ГОРОД</NavLink></li>
+                            <li><NavLink to='/food' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>ЕДА</NavLink></li>
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>
