@@ -39,7 +39,6 @@ class BurgerBtn extends Component {
                         <li className={navMenuActive.mailFont}>
                             <a href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud</a>
                         </li>
-
                         <li className={navMenuActive.linksSmall}>
                             <a href="https://www.facebook.com/bessondi">FACEBOOK</a>
                             <a href="https://vk.com/bessondi">VK</a>

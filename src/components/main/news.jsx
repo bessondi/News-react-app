@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import GridComponent from './gridComponent';
 
+import mainStyle from './news.module.css';
+
 import SPb1ImgSrc from "../../img/SPb.jpg";
 import SPb2ImgSrc from "../../img/SPb1.jpg";
 import SPb3ImgSrc from "../../img/SPb3.jpg";
 import SPb4ImgSrc from "../../img/SPb4.jpg";
 import SPb5ImgSrc from "../../img/SPb5.jpg";
 import SPb6ImgSrc from "../../img/SPb6.jpg";
-import mainStyle from './main.module.css';
 
-class Main extends Component {
+class News extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -38,12 +39,12 @@ class Main extends Component {
                 'Some text 6.'
             ],
             links: [
-                '/news/article1',
-                '/news/article2',
-                '/news/article3',
-                '/news/article4',
-                '/news/article5',
-                '/news/article6'
+                '/news/article1#top',
+                '/news/article2#top',
+                '/news/article3#top',
+                '/news/article4#top',
+                '/news/article5#top',
+                '/news/article6#top'
             ]
         }
     }
@@ -52,19 +53,12 @@ class Main extends Component {
         const { pictures, titles, texts, links } = this.state;
 
         return (
-            <main>
+            <main id='newsSection'>
                 <div className={mainStyle.wrapper}>
                     <div className={mainStyle.home}>
                         {
-                            pictures.map((compSrc, i) => <GridComponent key={i} title={titles[i]} text={texts[i]} image={compSrc} hidden='read' link={links[i]}/>)
+                            pictures.map((compSrc, i) => <GridComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />)
                         }
-
-                        {/* <GridComponent title="Title name 1" text="Some text." image={this.state.pictures[0]}/>
-                        <GridComponent title="Title name 2" text="Some text." image={this.state.pictures[1]}/>
-                        <GridComponent title="Title name 3" text="Some text." image={this.state.pictures[2]}/>
-                        <GridComponent title="Title name 4" text="Some text." image={this.state.pictures[3]}/>
-                        <GridComponent title="Title name 5" text="Some text." image={this.state.pictures[4]}/>
-                        <GridComponent title="Title name 6" text="Some text." image={this.state.pictures[5]}/> */}
                     </div>
                 </div>
             </main>
@@ -72,4 +66,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default News;

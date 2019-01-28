@@ -1,30 +1,24 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
+import CloseBtn from "./closeBtn";
 
-import singleArticle from './singleArticle.module.css';
-import SPb1ImgSrc from "../../../img/SPb.jpg";
-
+import singleArticle from './newsArticle.module.css';
+import SPbImgSrc from "../../../img/SPb1.jpg";
 
 const PictureArticle = styled.div`
-            background-image: url(${SPb1ImgSrc});
+            background-image: url(${SPbImgSrc});
         `;
 
 const Article = () => {
     return (
-        <article className={singleArticle.mainArticle} >
+        <article className={singleArticle.mainArticle}>
+            <a id="top" className={singleArticle.topScroll}></a>
+            <CloseBtn/>
 
-            <div className={singleArticle.btnWrapper}>
-                <NavLink to="/news" className={singleArticle.articleBtn}>
-                    <span/>
-                </NavLink>
-            </div>
-
-            <h1> Заголовок. Название статьи </h1>
+            <h1> Название статьи 2. </h1>
             <PictureArticle className={singleArticle.picArticle}/>
-            <p>Описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aperiam
-                consectetur debitis
-                et.</p>
+
+            <p>Описание. Lorem ipsum dolor sit amet.</p>
             <h2>Абзац 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae
                 nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis

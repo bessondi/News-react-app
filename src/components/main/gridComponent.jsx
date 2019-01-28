@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import {NavLink} from "react-router-dom";
+import React, {Component} from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import styled from 'styled-components';
-import mainStyle from './main.module.css';
+import mainStyle from './news.module.css';
 
 class GridComponent extends Component {
     render() {
-
-        const { image, link, title, text, hidden } = this.props;
+        const {image, link, title, text, hidden} = this.props;
 
         const PictureImg = styled.div`
             background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(${image});
@@ -24,8 +23,8 @@ class GridComponent extends Component {
         `;
 
         return (
-            <NavLink to={link} className={mainStyle.pictureWrap}>
-                {/*<a href={`#${child.get('anchor')}`}>{child.get('anchor')}</a>*/}
+
+            <Link to={link} className={mainStyle.pictureWrap}>
                 <PictureImg>
                     <MarginTop className={mainStyle.colorBlock}>
                         <h2>{title}</h2>
@@ -33,7 +32,7 @@ class GridComponent extends Component {
                         <h3 className={mainStyle.hidden}>{hidden}</h3>
                     </MarginTop>
                 </PictureImg>
-            </NavLink>
+            </Link>
         )
     }
 }

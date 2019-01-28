@@ -1,3 +1,8 @@
+.topScroll {
+    position: absolute;
+    top: 0;
+}
+
 .mainArticle {
     max-width: 900px;
     margin: 50px auto;
@@ -36,7 +41,7 @@
 .articleBtn span::before,
 .articleBtn span::after {
     width: 20px;
-    height: 2px;
+    height: 3px;
     background-color: gray;
 }
 
@@ -52,7 +57,7 @@
 }
 
 .articleBtn span::before {
-    transform: translateY(2px) translateX(25px) translateY(5px) rotate(45deg);
+    transform: translateY(3px) translateX(25px) translateY(5px) rotate(45deg);
 
 }
 
