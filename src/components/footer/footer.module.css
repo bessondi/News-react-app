@@ -6,9 +6,10 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
     padding: 0;
-    color: #24305e;
+    /*color: #24305e;*/
     width: 100%;
     max-width: 1200px;
     min-height: 50px;
@@ -25,10 +26,11 @@ footer a {
     font-weight: 700;
     text-transform: uppercase;
     margin: 25px 10px 0 10px;
+    color: #fff;
 }
 
 .sectionField {
-    background-color: #374785;
+    background-color: #9a918c;
     max-width: 2000px;
     margin: 0 auto;
 }
@@ -43,7 +45,7 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #252839;
+    background-color: #9a918c;
     margin: 0;
     padding: 0;
 }
@@ -51,6 +53,7 @@ footer a {
 .footerFlex {
     max-width: 2000px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .footerFlex li,

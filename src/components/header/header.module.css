@@ -1,10 +1,10 @@
-header a, p {
-    color: white;
+header a, header p {
+    color: black;
     font-size: 1rem;
 }
 
 header {
-    background-color: #a8d0e6;
+    background-color: #fff;
     max-width: 2000px;
     margin: 0 auto;
 }
@@ -37,17 +37,19 @@ header ul li {
 }
 
 .boxBorder:hover {
-    background-color: black;
-    color: #a8d0e6;
+    background-color: #fab131;
+    color: #fff;
     padding: 10px;
     margin: -10px;
+    border-radius: 5px;
 }
 
 .activeLink {
     background-color: black;
-    color: #a8d0e6;
+    color: #fff;
     padding: 10px;
     margin: -10px;
+    border-radius: 5px;
 }
 
 .headerRight p {

@@ -6,9 +6,7 @@ const Columns = () => {
         <div className={footerStyle.sectionField}>
             <div className={footerStyle.sectionСolumns}>
                 <div className={footerStyle.fourColumns}>
-                                <span className={footerStyle.boldStyle}>
-                                    <a href="#s">Name</a>
-                                </span>
+                    <span className={footerStyle.boldStyle}>Name</span>
                     <ul>
                         <li><a href="#s">text 1</a></li>
                         <li><a href="#s">text 2</a></li>
@@ -16,9 +14,7 @@ const Columns = () => {
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                                <span className={footerStyle.boldStyle}>
-                                    <a href="#s">Name</a>
-                                </span>
+                    <span className={footerStyle.boldStyle}>Name</span>
                     <ul>
                         <li><a href="#s">text 1</a></li>
                         <li><a href="#s">text 2</a></li>
@@ -26,9 +22,7 @@ const Columns = () => {
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                                <span className={footerStyle.boldStyle}>
-                                    <a href="#s">Name</a>
-                                </span>
+                    <span className={footerStyle.boldStyle}>Name</span>
                     <ul>
                         <li><a href="#s">text 1</a></li>
                         <li><a href="#s">text 2</a></li>
@@ -36,9 +30,7 @@ const Columns = () => {
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                                <span className={footerStyle.boldStyle}>
-                                    <a href="#s">Name</a>
-                                </span>
+                    <span className={footerStyle.boldStyle}>Name</span>
                     <ul>
                         <li><a href="#s">text 1</a></li>
                         <li><a href="#s">text 2</a></li>

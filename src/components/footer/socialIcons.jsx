@@ -14,9 +14,9 @@ class SocialIcons extends Component {
                 SI3imgSrc,
             ],
             links: [
-                "https://facebook.com",
-                "https://vk.com",
-                "https://instagram.com"
+                "https://www.facebook.com/bessondi",
+                "https://vk.com/bessondi",
+                "https://www.instagram.com/bessondi"
             ]
         }
     }

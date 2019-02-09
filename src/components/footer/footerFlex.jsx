@@ -8,7 +8,7 @@ const FooterFlex = () => {
         <div className={footerStyle.footerFlex}>
             <div className={footerStyle.sectionСolumns}>
                 <div className={footerStyle.footerLeft}>
-                    <p>SPb-News by Dmitry Bessonov</p>
+                    <p>SPb-News by <a href="https://github.com/bessondi">Dmitry Bessonov</a></p>
                 </div>
                 <div className={footerStyle.footerCenter}>
                     <SocialIcons />
@@ -17,7 +17,7 @@ const FooterFlex = () => {
                     <ul>
                         <li><a href="#s">Privacy</a></li>
                         <li><a href="#s">Advertisement</a></li>
-                        <li><a href="#s">Contact Us</a></li>
+                        <li><a href="mailto:dmitrybessonov@icloud.com">Contact Me</a></li>
                     </ul>
                 </div>
             </div>

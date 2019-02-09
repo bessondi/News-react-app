@@ -2,7 +2,7 @@
     font-family: 'Proxima Nova Semibold';
     font-style: normal;
     font-weight: 600;
-    src: url(./fonts/ProximaNova-Semibold.ttf);
+    src: url(fonts/ProximaNova/ProximaNova-Semibold.ttf);
 }
 
 @font-face {
@@ -12,8 +12,22 @@
     src: url(./fonts/SofiaPro/SofiaProRegular.ttf);
 }
 
+@font-face {
+    font-family: 'Futura PT regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/FuturaPT/FuturaPT-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Futura PT bold';
+    font-style: bold;
+    font-weight: 700;
+    src: url(./fonts/FuturaPT/FuturaPT-Bold.ttf);
+}
+
 .App {
-    font-family: 'Proxima Nova Semibold', 'Sofia Pro', 'Helvetica Neue', sans-serif;
+    font-family: 'Proxima Nova Semibold', 'Futura PT regular', 'Sofia Pro', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    background-color: #a8d0e6;
+    background-color: #fff;
 }
