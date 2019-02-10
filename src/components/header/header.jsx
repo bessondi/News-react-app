@@ -20,7 +20,7 @@ class Header extends Component {
                         <ul>
                             <li><NavLink to='/news' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>НОВОСТИ</NavLink></li>
                             <li><NavLink to='/entertainment' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>РАЗВЛЕЧЕНИЯ</NavLink></li>
-                            <li><NavLink to='/city' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>ГОРОД</NavLink></li>
+                            <li><NavLink to='/places' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>МЕСТА</NavLink></li>
                             <li><NavLink to='/food' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>ЕДА</NavLink></li>
                         </ul>
                     </div>

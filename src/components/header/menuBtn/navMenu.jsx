@@ -29,12 +29,11 @@ class BurgerBtn extends Component {
                         ? `${navMenuActive.listItemsActive}`
                         : `${navMenuActive.listItems}` }>
 
-
+                        <li><NavLink to='/' onClick={ this.toggleClass }>ГЛАВНАЯ</NavLink></li>
                         <li><NavLink to="/news" onClick={ this.toggleClass }>НОВОСТИ</NavLink></li>
                         <li><NavLink to="/entertainment" onClick={ this.toggleClass }>РАЗВЛЕЧЕНИЯ</NavLink></li>
-                        <li><NavLink to="/city" onClick={ this.toggleClass }>ГОРОД</NavLink></li>
+                        <li><NavLink to="/places" onClick={ this.toggleClass }>МЕСТА</NavLink></li>
                         <li><NavLink to="/food" onClick={ this.toggleClass }>ЕДА</NavLink></li>
-
 
                         <li className={navMenuActive.mailFont}>
                             <a href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud.com</a>

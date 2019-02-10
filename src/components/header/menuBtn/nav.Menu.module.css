@@ -52,6 +52,7 @@
 
     .listItemsActive li:nth-child(2) {
         transition-delay: 0.2s;
+        margin-top: 50px;
     }
 
     .listItemsActive li:nth-child(3) {
@@ -63,11 +64,15 @@
     }
 
     .listItemsActive li:nth-child(5) {
-        margin-top: 90px;
         transition-delay: 0.5s;
     }
 
     .listItemsActive li:nth-child(6) {
+        transition-delay: 0.6s;
+        margin-top: 90px;
+    }
+
+    .listItemsActive li:nth-child(7) {
         transition-delay: 0.6s;
     }
 

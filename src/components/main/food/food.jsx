@@ -65,7 +65,7 @@ class Food extends Component {
 
         return (
 
-            <main id='entertainmentSection'>
+            <main id='foodSection'>
                 <div className={mainFoodStyle.wrapper}>
                     <div className={mainFoodStyle.home}>
                         {gridComponent}

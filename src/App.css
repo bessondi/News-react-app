@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: 'Futura PT bold';
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     src: url(./fonts/FuturaPT/FuturaPT-Bold.ttf);
 }
@@ -29,5 +29,5 @@
 .App {
     font-family: 'Proxima Nova Semibold', 'Futura PT regular', 'Sofia Pro', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }

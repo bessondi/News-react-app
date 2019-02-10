@@ -10,7 +10,7 @@ import SPb4Img from "../../../img/SPb4.jpg";
 import SPb5Img from "../../../img/SPb5.jpg";
 import SPb6Img from "../../../img/SPb6.jpg";
 
-// import AllNewsRoutes from "./singleNewsArticles/allNewsRoutes";
+import AllNewsRoutes from "./singleNewsArticles/allNewsRoutes";
 
 class News extends Component {
     constructor(props) {
@@ -57,7 +57,7 @@ class News extends Component {
 
         return (
             <React.Fragment>
-            {/*<AllNewsRoutes />*/}
+            <AllNewsRoutes />
 
             <main id='newsSection'>
                 <div className={mainNewsStyle.wrapper}>
