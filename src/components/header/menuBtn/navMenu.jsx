@@ -48,12 +48,12 @@ class BurgerBtn extends Component {
                 </div>
 
                 <div className={headerStyle.burgerBtn}>
-                    <a href="#s" className={ this.state.active
+                    <button className={ this.state.active
                         ? `${navMenuBtnStyle.menuBtn} ${navMenuBtnStyle.menuBtnActive}`
                         : `${navMenuBtnStyle.menuBtn}` }
                        onClick={ this.toggleClass }>
                         <span/>
-                    </a>
+                    </button>
                 </div>
 
             </React.Fragment>

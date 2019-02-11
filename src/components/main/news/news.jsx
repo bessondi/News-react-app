@@ -1,28 +1,27 @@
 import React, {Component} from 'react';
 import GridNewsComponent from './gridNewsComponent';
+import NewsArticles from "./newsArticles";
 
 import mainNewsStyle from './news.module.css';
 
-import SPb1Img from "../../../img/SPb1.jpg";
-import SPb2Img from "../../../img/SPb2.jpg";
-import SPb3Img from "../../../img/SPb3.jpg";
-import SPb4Img from "../../../img/SPb4.jpg";
-import SPb5Img from "../../../img/SPb5.jpg";
-import SPb6Img from "../../../img/SPb6.jpg";
-
-import AllNewsRoutes from "./singleNewsArticles/allNewsRoutes";
+import newsImg1 from "../../../img/SPb1.jpg";
+import newsImg2 from "../../../img/SPb2.jpg";
+import newsImg3 from "../../../img/SPb3.jpg";
+import newsImg4 from "../../../img/SPb4.jpg";
+import newsImg5 from "../../../img/SPb5.jpg";
+import newsImg6 from "../../../img/SPb6.jpg";
 
 class News extends Component {
     constructor(props) {
         super(props)
         this.state = {
             pictures: [
-                SPb1Img,
-                SPb2Img,
-                SPb3Img,
-                SPb4Img,
-                SPb5Img,
-                SPb6Img
+                newsImg1,
+                newsImg2,
+                newsImg3,
+                newsImg4,
+                newsImg5,
+                newsImg6
             ],
             titles: [
                 'Title name 1',
@@ -53,11 +52,11 @@ class News extends Component {
 
     render() {
         const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (compSrc, i) => <GridNewsComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const gridComponent = pictures.map( (img, i) => <GridNewsComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
 
         return (
             <React.Fragment>
-            <AllNewsRoutes />
+            <NewsArticles/>
 
             <main id='newsSection'>
                 <div className={mainNewsStyle.wrapper}>

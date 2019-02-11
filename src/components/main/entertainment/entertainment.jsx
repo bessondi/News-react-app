@@ -12,6 +12,8 @@ import ImgSrc6 from "../../../img/Entt6.jpg";
 import ImgSrc7 from "../../../img/Entt7.jpg";
 import ImgSrc8 from "../../../img/Entt8.jpg";
 import ImgSrc9 from "../../../img/Entt9.jpg";
+import NewsArticles from "../news/newsArticles";
+import EntertainmentArticles from "./entertainmentArticles";
 
 class Entertainment extends Component {
     constructor(props) {
@@ -69,6 +71,8 @@ class Entertainment extends Component {
         const gridComponent = pictures.map( (compSrc, i) => <GridEnttComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
 
         return (
+            <React.Fragment>
+            <EntertainmentArticles/>
 
             <main id='entertainmentSection'>
                 <div className={mainEnttStyle.wrapper}>
@@ -77,7 +81,7 @@ class Entertainment extends Component {
                     </div>
                 </div>
             </main>
-
+            </React.Fragment>
         );
     }
 }

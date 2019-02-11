@@ -1,0 +1,43 @@
+.topScroll {
+    position: absolute;
+    top: 0;
+}
+
+.mainArticle {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px 50px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.mainArticle p,
+.mainArticle h1,
+.mainArticle h2,
+.mainArticle h3 {
+    color: black;
+}
+
+.mainArticle h1 {
+    font-size: 2rem;
+}
+.mainArticle h1,
+.mainArticle h2,
+.mainArticle h3 {
+    font-family: "Futura PT bold", serif;
+}
+
+.mainArticle p {
+    font-family: "Futura PT regular", serif;
+    font-size: 1.3rem;
+}
+
+.picArticle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}

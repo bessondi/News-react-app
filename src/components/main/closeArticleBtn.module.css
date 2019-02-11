@@ -1,0 +1,52 @@
+/* close BTN */
+.ArticleBtnClose {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 15px;
+    border-width: 0;
+    background-color: #fff;
+}
+
+.ArticleBtnClose:hover {
+    cursor: pointer;
+}
+
+.ArticleBtnClose:active {
+     outline: none;
+     border: none;
+}
+
+.articleBtn span,
+.articleBtn span::before,
+.articleBtn span::after {
+    width: 20px;
+    height: 3px;
+    background-color: gray;
+}
+
+.articleBtn span {
+    float: right;
+    height: 0;
+}
+
+.articleBtn span::before,
+.articleBtn span::after {
+    content: '';
+    display: block;
+}
+
+.articleBtn span::before {
+    transform: translateY(3px) translateX(25px) translateY(20px) rotate(45deg);
+}
+
+.articleBtn span::after {
+    transform: translateY(0px) translateX(25px) translateY(20px) rotate(-45deg);
+}
+
+@media screen and (max-width: 640px) {
+    .articleBtn span {
+        display: none;
+    }
+}
