@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GridEnttComponent from './gridEnttComponent';
+import EntertainmentArticles from "./entertainmentArticles";
 
 import mainEnttStyle from './entertainment.module.css';
 
@@ -12,8 +13,6 @@ import ImgSrc6 from "../../../img/Entt6.jpg";
 import ImgSrc7 from "../../../img/Entt7.jpg";
 import ImgSrc8 from "../../../img/Entt8.jpg";
 import ImgSrc9 from "../../../img/Entt9.jpg";
-import NewsArticles from "../news/newsArticles";
-import EntertainmentArticles from "./entertainmentArticles";
 
 class Entertainment extends Component {
     constructor(props) {
@@ -68,7 +67,7 @@ class Entertainment extends Component {
 
     render() {
         const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (compSrc, i) => <GridEnttComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const gridComponent = pictures.map( (img, i) => <GridEnttComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
 
         return (
             <React.Fragment>

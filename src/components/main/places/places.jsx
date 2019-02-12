@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GridPlacesComponent from './gridPlacesComponent';
+import PlacesArticles from "./placesArticles";
 
 import mainPlacesStyle from './places.module.css';
 
@@ -51,9 +52,11 @@ class Places extends Component {
 
     render() {
         const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (compSrc, i) => <GridPlacesComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const gridComponent = pictures.map( (img, i) => <GridPlacesComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
 
         return (
+            <React.Fragment>
+            <PlacesArticles/>
 
             <main id='placesSection'>
                 <div className={mainPlacesStyle.wrapper}>
@@ -62,7 +65,7 @@ class Places extends Component {
                     </div>
                 </div>
             </main>
-
+            </React.Fragment>
         );
     }
 }

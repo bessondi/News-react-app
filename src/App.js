@@ -12,9 +12,7 @@ import Footer from './components/footer/footer';
 import './App.css';
 
 // TODO:
-// add articles to the sections and fill it texts
-
-// FIXME:
+// fill texts to the articles
 
 
 class App extends Component {

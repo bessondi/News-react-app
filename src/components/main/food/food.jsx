@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GridFoodComponent from './gridFoodComponent';
+import FoodArticles from "./foodArticles";
 
 import mainFoodStyle from './food.module.css';
 
@@ -11,6 +12,7 @@ import ImgSrc5 from "../../../img/Food5.jpg";
 import ImgSrc6 from "../../../img/Food6.jpg";
 import ImgSrc7 from "../../../img/Food7.jpg";
 import ImgSrc8 from "../../../img/Food8.jpg";
+import ImgSrc9 from "../../../img/Food9.jpg";
 
 class Food extends Component {
     constructor(props) {
@@ -24,7 +26,8 @@ class Food extends Component {
                 ImgSrc5,
                 ImgSrc6,
                 ImgSrc7,
-                ImgSrc8
+                ImgSrc8,
+                ImgSrc9
             ],
             titles: [
                 'Title food name 1',
@@ -34,7 +37,8 @@ class Food extends Component {
                 'Title food name 5',
                 'Title food name 6',
                 'Title food name 7',
-                'Title food name 8'
+                'Title food name 8',
+                'Title food name 9'
             ],
             texts: [
                 'Some food text 1.',
@@ -44,7 +48,8 @@ class Food extends Component {
                 'Some food text 5.',
                 'Some food text 6.',
                 'Some food text 7.',
-                'Some food text 8.'
+                'Some food text 8.',
+                'Some food text 9.'
             ],
             links: [
                 '/food/article1#top',
@@ -54,16 +59,19 @@ class Food extends Component {
                 '/food/article5#top',
                 '/food/article6#top',
                 '/food/article7#top',
-                '/food/article8#top'
+                '/food/article8#top',
+                '/food/article9#top'
             ]
         }
     }
 
     render() {
         const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (compSrc, i) => <GridFoodComponent key={i} image={compSrc} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const gridComponent = pictures.map( (img, i) => <GridFoodComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
 
         return (
+            <React.Fragment>
+            <FoodArticles/>
 
             <main id='foodSection'>
                 <div className={mainFoodStyle.wrapper}>
@@ -72,7 +80,7 @@ class Food extends Component {
                     </div>
                 </div>
             </main>
-
+            </React.Fragment>
         );
     }
 }

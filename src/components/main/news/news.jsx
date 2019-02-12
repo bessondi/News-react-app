@@ -4,24 +4,24 @@ import NewsArticles from "./newsArticles";
 
 import mainNewsStyle from './news.module.css';
 
-import newsImg1 from "../../../img/SPb1.jpg";
-import newsImg2 from "../../../img/SPb2.jpg";
-import newsImg3 from "../../../img/SPb3.jpg";
-import newsImg4 from "../../../img/SPb4.jpg";
-import newsImg5 from "../../../img/SPb5.jpg";
-import newsImg6 from "../../../img/SPb6.jpg";
+import ImgSrc1 from "../../../img/SPb1.jpg";
+import ImgSrc2 from "../../../img/SPb2.jpg";
+import ImgSrc3 from "../../../img/SPb3.jpg";
+import ImgSrc4 from "../../../img/SPb4.jpg";
+import ImgSrc5 from "../../../img/SPb5.jpg";
+import ImgSrc6 from "../../../img/SPb6.jpg";
 
 class News extends Component {
     constructor(props) {
         super(props)
         this.state = {
             pictures: [
-                newsImg1,
-                newsImg2,
-                newsImg3,
-                newsImg4,
-                newsImg5,
-                newsImg6
+                ImgSrc1,
+                ImgSrc2,
+                ImgSrc3,
+                ImgSrc4,
+                ImgSrc5,
+                ImgSrc6
             ],
             titles: [
                 'Title name 1',
