@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "7448df6e3b5657f40c4650e6c569a841",
-    "url": "/News-react-app/static/media/City1.7448df6e.jpg"
+    "revision": "c6030142b6907e7b582db2d4875aea31",
+    "url": "/News-react-app/static/media/City2.c6030142.jpg"
   },
   {
-    "revision": "226ffd7f607f1add10e8",
-    "url": "/News-react-app/static/css/main.a07c167f.chunk.css"
+    "revision": "bfcfe442f054dc0fc2e9",
+    "url": "/News-react-app/static/css/main.0cf8b4e1.chunk.css"
   },
   {
-    "revision": "30bf4f1d0682273a67c1",
-    "url": "/News-react-app/static/js/1.30bf4f1d.chunk.js"
+    "revision": "f57a6f5495127ba02faf",
+    "url": "/News-react-app/static/js/1.f57a6f54.chunk.js"
   },
   {
     "revision": "3c6a5fbfb7fb1647dfb1",
@@ -76,12 +76,12 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Entt9.38c2cf90.jpg"
   },
   {
-    "revision": "226ffd7f607f1add10e8",
-    "url": "/News-react-app/static/js/main.226ffd7f.chunk.js"
+    "revision": "7448df6e3b5657f40c4650e6c569a841",
+    "url": "/News-react-app/static/media/City1.7448df6e.jpg"
   },
   {
-    "revision": "c6030142b6907e7b582db2d4875aea31",
-    "url": "/News-react-app/static/media/City2.c6030142.jpg"
+    "revision": "bfcfe442f054dc0fc2e9",
+    "url": "/News-react-app/static/js/main.bfcfe442.chunk.js"
   },
   {
     "revision": "7061f0dbce38a43a46681ff7d0189e06",
@@ -132,16 +132,20 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Food8.be772e19.jpg"
   },
   {
+    "revision": "0fa3bbbaa93e898a55bd8e4afd6a3420",
+    "url": "/News-react-app/static/media/Food9.0fa3bbba.jpg"
+  },
+  {
     "revision": "b2d80a01aff1e68551569bf745dc8dcc",
     "url": "/News-react-app/static/media/Home.b2d80a01.jpg"
   },
   {
-    "revision": "1f73bfb5dafd4a5613dd3cfc09a8562b",
-    "url": "/News-react-app/static/media/SofiaProRegular.1f73bfb5.ttf"
-  },
-  {
     "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
     "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
+  },
+  {
+    "revision": "1f73bfb5dafd4a5613dd3cfc09a8562b",
+    "url": "/News-react-app/static/media/SofiaProRegular.1f73bfb5.ttf"
   },
   {
     "revision": "6dddddc0b4726becc525fc7794cfcf6b",
@@ -152,7 +156,7 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf"
   },
   {
-    "revision": "1d374870c73ad79fe8454dcd8b1f1073",
+    "revision": "cb7c75c1e341003bbd76086fe3d22ec9",
     "url": "/News-react-app/index.html"
   }
 ];
