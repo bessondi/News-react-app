@@ -1,9 +1,9 @@
 {
-  "main.css": "/News-react-app/static/css/main.0cf8b4e1.chunk.css",
-  "main.js": "/News-react-app/static/js/main.bfcfe442.chunk.js",
-  "main.js.map": "/News-react-app/static/js/main.bfcfe442.chunk.js.map",
-  "static/js/1.f57a6f54.chunk.js": "/News-react-app/static/js/1.f57a6f54.chunk.js",
-  "static/js/1.f57a6f54.chunk.js.map": "/News-react-app/static/js/1.f57a6f54.chunk.js.map",
+  "main.css": "/News-react-app/static/css/main.15542e89.chunk.css",
+  "main.js": "/News-react-app/static/js/main.92264487.chunk.js",
+  "main.js.map": "/News-react-app/static/js/main.92264487.chunk.js.map",
+  "static/js/1.ce572c89.chunk.js": "/News-react-app/static/js/1.ce572c89.chunk.js",
+  "static/js/1.ce572c89.chunk.js.map": "/News-react-app/static/js/1.ce572c89.chunk.js.map",
   "runtime~main.js": "/News-react-app/static/js/runtime~main.3c6a5fbf.js",
   "runtime~main.js.map": "/News-react-app/static/js/runtime~main.3c6a5fbf.js.map",
   "static/media/Food3.jpg": "/News-react-app/static/media/Food3.ae738c20.jpg",
@@ -38,8 +38,8 @@
   "static/media/Food9.jpg": "/News-react-app/static/media/Food9.0fa3bbba.jpg",
   "static/media/Home.jpg": "/News-react-app/static/media/Home.b2d80a01.jpg",
   "static/media/App.css": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf",
-  "static/css/main.0cf8b4e1.chunk.css.map": "/News-react-app/static/css/main.0cf8b4e1.chunk.css.map",
+  "static/css/main.15542e89.chunk.css.map": "/News-react-app/static/css/main.15542e89.chunk.css.map",
   "index.html": "/News-react-app/index.html",
-  "precache-manifest.7a91c9b919ab44e9f825207acc106a40.js": "/News-react-app/precache-manifest.7a91c9b919ab44e9f825207acc106a40.js",
+  "precache-manifest.f88f32a2d42fddbc24c4507ec9fc9dbe.js": "/News-react-app/precache-manifest.f88f32a2d42fddbc24c4507ec9fc9dbe.js",
   "service-worker.js": "/News-react-app/service-worker.js"
 }
