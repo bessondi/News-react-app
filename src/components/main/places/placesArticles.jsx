@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route} from "react-router-dom";
 import CloseArticleBtn from "../closeArticleBtn";
+import DiffPublishDates from "../DiffPublishDates";
 
 import styled from 'styled-components';
 import singleArticle from "../Article.module.css";
@@ -17,6 +18,7 @@ const articles = [
         id: 1,
         name: 'Article',
         path: '/places/article1',
+        dateOfPublish: '2019, 2, 5, 12, 5',
         title: 'Название статьи 1.',
         img: `${Img1}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -31,6 +33,7 @@ const articles = [
         id: 2,
         name: 'Article2',
         path: '/places/article2',
+        dateOfPublish: '2019, 2, 1, 12, 5',
         title: 'Название статьи 2.',
         img: `${Img2}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -41,6 +44,7 @@ const articles = [
         id: 3,
         name: 'Article3',
         path: '/places/article3',
+        dateOfPublish: '2019, 1, 1, 12, 5',
         title: 'Название статьи 3.',
         img: `${Img3}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -55,6 +59,7 @@ const articles = [
         id: 4,
         name: 'Article4',
         path: '/places/article4',
+        dateOfPublish: '2019, 0, 1, 12, 5',
         title: 'Название статьи 4.',
         img: `${Img4}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -65,6 +70,7 @@ const articles = [
         id: 5,
         name: 'Article5',
         path: '/places/article5',
+        dateOfPublish: '2019, 0, 5, 12, 5',
         title: 'Название статьи 5.',
         img: `${Img5}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -77,6 +83,7 @@ const articles = [
         id: 6,
         name: 'Article6',
         path: '/places/article6',
+        dateOfPublish: '2018, 1, 1, 12, 5',
         title: 'Название статьи 6.',
         img: `${Img6}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -111,6 +118,11 @@ const ArticleTemplate = articles.map((article, id) => {
 
                 <h2> {article.thirdH2} </h2>
                 <p> {article.text3} </p>
+
+                <br/>
+                <time className={singleArticle.publish}>
+                    <span>Опубликовано <DiffPublishDates date={article.dateOfPublish} /></span>
+                </time>
             </article>
         )
     };

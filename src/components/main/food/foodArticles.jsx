@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route} from "react-router-dom";
 import CloseArticleBtn from "../closeArticleBtn";
+import DiffPublishDates from "../DiffPublishDates";
 
 import styled from 'styled-components';
 import singleArticle from "../Article.module.css";
@@ -20,6 +21,7 @@ const articles = [
         id: 1,
         name: 'Article',
         path: '/food/article1',
+        dateOfPublish: '2018, 1, 7, 15, 0',
         title: 'Название статьи 1.',
         img: `${Img1}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -34,6 +36,7 @@ const articles = [
         id: 2,
         name: 'Article2',
         path: '/food/article2',
+        dateOfPublish: '2019, 0, 7, 15, 0',
         title: 'Название статьи 2.',
         img: `${Img2}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -44,6 +47,7 @@ const articles = [
         id: 3,
         name: 'Article3',
         path: '/food/article3',
+        dateOfPublish: '2019, 1, 7, 15, 0',
         title: 'Название статьи 3.',
         img: `${Img3}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -58,6 +62,7 @@ const articles = [
         id: 4,
         name: 'Article4',
         path: '/food/article4',
+        dateOfPublish: '2019, 2, 7, 15, 0',
         title: 'Название статьи 4.',
         img: `${Img4}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -68,6 +73,7 @@ const articles = [
         id: 5,
         name: 'Article5',
         path: '/food/article5',
+        dateOfPublish: '2019, 2, 2, 15, 0',
         title: 'Название статьи 5.',
         img: `${Img5}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -80,6 +86,7 @@ const articles = [
         id: 6,
         name: 'Article6',
         path: '/food/article6',
+        dateOfPublish: '2016, 1, 7, 15, 0',
         title: 'Название статьи 6.',
         img: `${Img6}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -92,6 +99,7 @@ const articles = [
         id: 7,
         name: 'Article7',
         path: '/food/article7',
+        dateOfPublish: '2019, 0, 7, 15, 0',
         title: 'Название статьи 7.',
         img: `${Img7}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -102,6 +110,7 @@ const articles = [
         id: 8,
         name: 'Article8',
         path: '/food/article8',
+        dateOfPublish: '2019, 1, 22, 15, 0',
         title: 'Название статьи 8.',
         img: `${Img8}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -114,6 +123,7 @@ const articles = [
         id: 9,
         name: 'Article9',
         path: '/food/article9',
+        dateOfPublish: '2019, 0, 1, 15, 5',
         title: 'Название статьи 9.',
         img: `${Img9}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -148,6 +158,11 @@ const ArticleTemplate = articles.map((article, id) => {
 
                 <h2> {article.thirdH2} </h2>
                 <p> {article.text3} </p>
+
+                <br/>
+                <time className={singleArticle.publish}>
+                    <span>Опубликовано <DiffPublishDates date={article.dateOfPublish} /></span>
+                </time>
             </article>
         )
     };

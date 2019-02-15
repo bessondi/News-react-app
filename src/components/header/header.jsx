@@ -25,7 +25,7 @@ class Header extends Component {
                         </ul>
                     </div>
                     <div className={headerStyle.headerRight}>
-                        <p>Сегодня <Today/></p>
+                       <Today/>
                     </div>
                     <BurgerBtn/>
                 </nav>

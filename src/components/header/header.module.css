@@ -64,8 +64,12 @@ header ul li {
 /* media */
 /* NAV - screen < 640 px */
 @media screen and (max-width: 640px) {
-    .headerLeft, .burgerBtn {
-        margin: 0 20px;
+    .headerLeft {
+        margin-left: 20px;
+    }
+
+    .burgerBtn {
+        margin-right: 20px;
     }
 
     nav {

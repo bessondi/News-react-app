@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route} from "react-router-dom";
 import CloseArticleBtn from "../closeArticleBtn";
+import DiffPublishDates from "../DiffPublishDates";
 
 import styled from 'styled-components';
 import singleArticle from "../Article.module.css";
@@ -17,6 +18,7 @@ const articles = [
         id: 1,
         name: 'Article',
         path: '/news/article1',
+        dateOfPublish: '2019, 1, 15, 12, 0',
         title: 'Название статьи 1.',
         img: `${Img1}`,
         description: 'Описание. Lorem ipsum dolor sit amet.',
@@ -30,6 +32,7 @@ const articles = [
     {
         id: 2,
         name: 'Article2',
+        dateOfPublish: '2019, 1, 15, 7, 0',
         path: '/news/article2',
         title: 'Название статьи 2.',
         img: `${Img2}`,
@@ -40,6 +43,7 @@ const articles = [
     {
         id: 3,
         name: 'Article3',
+        dateOfPublish: '2019, 1, 13, 15, 0',
         path: '/news/article3',
         title: 'Название статьи 3.',
         img: `${Img3}`,
@@ -54,6 +58,7 @@ const articles = [
     {
         id: 4,
         name: 'Article4',
+        dateOfPublish: '2019, 0, 13, 15, 0',
         path: '/news/article4',
         title: 'Название статьи 4.',
         img: `${Img4}`,
@@ -64,6 +69,7 @@ const articles = [
     {
         id: 5,
         name: 'Article5',
+        dateOfPublish: '2019, 0, 1, 3, 0',
         path: '/news/article5',
         title: 'Название статьи 5.',
         img: `${Img5}`,
@@ -76,6 +82,7 @@ const articles = [
     {
         id: 6,
         name: 'Article6',
+        dateOfPublish: '2019, 1, 13, 13, 0',
         path: '/news/article6',
         title: 'Название статьи 6.',
         img: `${Img6}`,
@@ -111,6 +118,11 @@ const ArticleTemplate = articles.map((article, id) => {
 
                 <h2> {article.thirdH2} </h2>
                 <p> {article.text3} </p>
+
+                <br/>
+                <time className={singleArticle.publish}>
+                    <span>Опубликовано <DiffPublishDates date={article.dateOfPublish} /></span>
+                </time>
             </article>
         )
     };
