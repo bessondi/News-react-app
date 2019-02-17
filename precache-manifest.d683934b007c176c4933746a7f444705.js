@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/City2.c6030142.jpg"
   },
   {
-    "revision": "9226448705e711e1f0b6",
-    "url": "/News-react-app/static/css/main.15542e89.chunk.css"
+    "revision": "dd60487250b846306413",
+    "url": "/News-react-app/static/css/main.7683fff2.chunk.css"
   },
   {
-    "revision": "ce572c89138c96660bb9",
-    "url": "/News-react-app/static/js/1.ce572c89.chunk.js"
+    "revision": "b330d00a27f664e89a83",
+    "url": "/News-react-app/static/js/1.b330d00a.chunk.js"
   },
   {
     "revision": "3c6a5fbfb7fb1647dfb1",
@@ -80,8 +80,8 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/City1.7448df6e.jpg"
   },
   {
-    "revision": "9226448705e711e1f0b6",
-    "url": "/News-react-app/static/js/main.92264487.chunk.js"
+    "revision": "dd60487250b846306413",
+    "url": "/News-react-app/static/js/main.dd604872.chunk.js"
   },
   {
     "revision": "7061f0dbce38a43a46681ff7d0189e06",
@@ -136,16 +136,16 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Food9.0fa3bbba.jpg"
   },
   {
-    "revision": "b2d80a01aff1e68551569bf745dc8dcc",
-    "url": "/News-react-app/static/media/Home.b2d80a01.jpg"
-  },
-  {
-    "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
-    "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
+    "revision": "affb3a48edda6e444b6c5520be37a92a",
+    "url": "/News-react-app/static/media/Home_cr.affb3a48.jpg"
   },
   {
     "revision": "1f73bfb5dafd4a5613dd3cfc09a8562b",
     "url": "/News-react-app/static/media/SofiaProRegular.1f73bfb5.ttf"
+  },
+  {
+    "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
+    "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
   },
   {
     "revision": "6dddddc0b4726becc525fc7794cfcf6b",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf"
   },
   {
-    "revision": "1825c41dd2bf27d1b3a63dc29bc2c36f",
+    "revision": "ec68bb623eabcc900a1d187592170022",
     "url": "/News-react-app/index.html"
   }
 ];
