@@ -13,6 +13,7 @@ import './App.css';
 
 // TODO:
 // fill texts to the articles
+// add more articles in sections
 
 
 class App extends Component {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GridPlacesComponent from './gridPlacesComponent';
+import GridComponent from "../gridComponent";
 import PlacesArticles from "./placesArticles";
 
 import mainPlacesStyle from './places.module.css';
@@ -12,47 +12,61 @@ import ImgSrc5 from "../../../img/City5.jpg";
 import ImgSrc6 from "../../../img/City6.jpg";
 
 class Places extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            pictures: [
-                ImgSrc1,
-                ImgSrc2,
-                ImgSrc3,
-                ImgSrc4,
-                ImgSrc5,
-                ImgSrc6
-            ],
-            titles: [
-                'Title places name 1',
-                'Title places name 2',
-                'Title places name 3',
-                'Title places name 4',
-                'Title places name 5',
-                'Title places name 6'
-            ],
-            texts: [
-                'Some places text 1.',
-                'Some places text 2.',
-                'Some places text 3.',
-                'Some places text 4.',
-                'Some places text 5.',
-                'Some places text 6.'
-            ],
-            links: [
-                '/places/article1#top',
-                '/places/article2#top',
-                '/places/article3#top',
-                '/places/article4#top',
-                '/places/article5#top',
-                '/places/article6#top'
-            ]
-        }
+    state = {
+        elements: [
+            {
+                id: 1,
+                picture: ImgSrc1,
+                title: 'Title name 1',
+                text: 'Some text 1.',
+                link: '/places/article1'
+            },
+            {
+                id: 2,
+                picture: ImgSrc2,
+                title: 'Title name 2',
+                text: 'Some text 2.',
+                link: '/places/article2'
+            },
+            {
+                id: 3,
+                picture: ImgSrc3,
+                title: 'Title name 3',
+                text: 'Some text 3.',
+                link: '/places/article3'
+            },
+            {
+                id: 4,
+                picture: ImgSrc4,
+                title: 'Title name 4',
+                text: 'Some text 4.',
+                link: '/places/article4'
+            },
+            {
+                id: 5,
+                picture: ImgSrc5,
+                title: 'Title name 5',
+                text: 'Some text 5.',
+                link: '/places/article5'
+            },
+            {
+                id: 6,
+                picture: ImgSrc6,
+                title: 'Title name 6',
+                text: 'Some text 6.',
+                link: '/places/article6'
+            }
+        ],
+        gridStyle: mainPlacesStyle
+    };
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 
     render() {
-        const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (img, i) => <GridPlacesComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const { elements, gridStyle } = this.state;
+        const gridComponent = elements.map( (picture, id) => <GridComponent key={id} style={gridStyle} image={elements[id].picture} title={elements[id].title} text={elements[id].text} hidden='смотреть' link={elements[id].link} />);
 
         return (
             <React.Fragment>
@@ -60,11 +74,13 @@ class Places extends Component {
 
             <main id='placesSection'>
                 <div className={mainPlacesStyle.wrapper}>
+                    <h1 className={mainPlacesStyle.sectionTitle}>ДОСТОПРИМЕЧАТЕЛЬНОСТИ ГОРОДА</h1>
                     <div className={mainPlacesStyle.home}>
                         {gridComponent}
                     </div>
                 </div>
             </main>
+
             </React.Fragment>
         );
     }

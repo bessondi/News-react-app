@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GridEnttComponent from './gridEnttComponent';
+import GridComponent from "../gridComponent";
 import EntertainmentArticles from "./entertainmentArticles";
 
 import mainEnttStyle from './entertainment.module.css';
@@ -15,59 +15,83 @@ import ImgSrc8 from "../../../img/Entt8.jpg";
 import ImgSrc9 from "../../../img/Entt9.jpg";
 
 class Entertainment extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            pictures: [
-                ImgSrc1,
-                ImgSrc2,
-                ImgSrc3,
-                ImgSrc4,
-                ImgSrc5,
-                ImgSrc6,
-                ImgSrc7,
-                ImgSrc8,
-                ImgSrc9
-            ],
-            titles: [
-                'Title entertainment name 1',
-                'Title entertainment name 2',
-                'Title entertainment name 3',
-                'Title entertainment name 4',
-                'Title entertainment name 5',
-                'Title entertainment name 6',
-                'Title entertainment name 7',
-                'Title entertainment name 8',
-                'Title entertainment name 9'
-            ],
-            texts: [
-                'Some entertainment text 1.',
-                'Some entertainment text 2.',
-                'Some entertainment text 3.',
-                'Some entertainment text 4.',
-                'Some entertainment text 5.',
-                'Some entertainment text 6.',
-                'Some entertainment text 7.',
-                'Some entertainment text 8.',
-                'Some entertainment text 9.'
-            ],
-            links: [
-                '/entertainment/article1#top',
-                '/entertainment/article2#top',
-                '/entertainment/article3#top',
-                '/entertainment/article4#top',
-                '/entertainment/article5#top',
-                '/entertainment/article6#top',
-                '/entertainment/article7#top',
-                '/entertainment/article8#top',
-                '/entertainment/article9#top'
-            ]
-        }
+    state = {
+        elements: [
+            {
+                id: 1,
+                picture: ImgSrc1,
+                title: 'Title name 1',
+                text: 'Some text 1.',
+                link: '/entertainment/article1'
+            },
+            {
+                id: 2,
+                picture: ImgSrc2,
+                title: 'Title name 2',
+                text: 'Some text 2.',
+                link: '/entertainment/article2'
+            },
+            {
+                id: 3,
+                picture: ImgSrc3,
+                title: 'Title name 3',
+                text: 'Some text 3.',
+                link: '/entertainment/article3'
+            },
+            {
+                id: 4,
+                picture: ImgSrc4,
+                title: 'Title name 4',
+                text: 'Some text 4.',
+                link: '/entertainment/article4'
+            },
+            {
+                id: 5,
+                picture: ImgSrc5,
+                title: 'Title name 5',
+                text: 'Some text 5.',
+                link: '/entertainment/article5'
+            },
+            {
+                id: 6,
+                picture: ImgSrc6,
+                title: 'Title name 6',
+                text: 'Some text 6.',
+                link: '/entertainment/article6'
+            },
+            {
+                id: 7,
+                picture: ImgSrc7,
+                title: 'Title name 7',
+                text: 'Some text 7.',
+                link: '/entertainment/article7'
+            },
+            {
+                id: 8,
+                picture: ImgSrc8,
+                title: 'Title name 8',
+                text: 'Some text 8.',
+                link: '/entertainment/article8'
+            },
+            {
+                id: 9,
+                picture: ImgSrc9,
+                title: 'Title name 9',
+                text: 'Some text 9.',
+                link: '/entertainment/article9'
+            }
+        ],
+        gridStyle: mainEnttStyle
+    };
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 
     render() {
-        const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (img, i) => <GridEnttComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const { elements, gridStyle } = this.state;
+
+        const gridComponent = elements.map( (picture, id) => <GridComponent key={id} style={gridStyle} image={elements[id].picture} title={elements[id].title} text={elements[id].text} hidden='найти' link={elements[id].link} />);
 
         return (
             <React.Fragment>
@@ -75,11 +99,13 @@ class Entertainment extends Component {
 
             <main id='entertainmentSection'>
                 <div className={mainEnttStyle.wrapper}>
+                    <h1 className={mainEnttStyle.sectionTitle}>ВСЕ РАЗВЛЕЧЕНИЯ</h1>
                     <div className={mainEnttStyle.home}>
                         {gridComponent}
                     </div>
                 </div>
             </main>
+
             </React.Fragment>
         );
     }

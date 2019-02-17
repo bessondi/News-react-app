@@ -15,9 +15,8 @@ const FooterFlex = () => {
                 </div>
                 <div className={footerStyle.footerRight}>
                     <ul>
-                        <li><a href="#s">Privacy</a></li>
-                        <li><a href="#s">Advertisement</a></li>
-                        <li><a href="mailto:dmitrybessonov@icloud.com">Contact Me</a></li>
+                        <li><a href="#s">О проекте</a></li>
+                        <li><a href="mailto:dmitrybessonov@icloud.com">Обратная связь</a></li>
                     </ul>
                 </div>
             </div>

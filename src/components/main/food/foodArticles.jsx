@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Route} from "react-router-dom";
 import CloseArticleBtn from "../closeArticleBtn";
 import DiffPublishDates from "../DiffPublishDates";
@@ -134,50 +134,55 @@ const articles = [
     }
 ];
 
-const ArticleTemplate = articles.map((article, id) => {
+export default class NewsArticles extends Component {
 
-    const PictureArticle = styled.div`
+    componentDidUpdate() {
+        window.scrollTo(0, 0)
+    }
+
+    render() {
+
+        const ArticleTemplate = articles.map((article, id) => {
+
+            const PictureArticle = styled.div`
         background-image: url(${article.img});
         `;
 
-    const component = () => {
+            const component = () => {
+                return (
+                    <article className={singleArticle.mainArticle}>
+                        <CloseArticleBtn path='/food'/>
+
+                        <h1> {article.title} </h1>
+                        <PictureArticle className={singleArticle.picArticle}/>
+                        <p> {article.description} </p>
+
+                        <h2> {article.firstH2} </h2>
+                        <p> {article.text1} </p>
+
+                        <h2> {article.secondH2} </h2>
+                        <p> {article.text2} </p>
+
+                        <h2> {article.thirdH2} </h2>
+                        <p> {article.text3} </p>
+
+                        <br/>
+                        <time className={singleArticle.publish}>
+                            <span>Опубликовано <DiffPublishDates date={article.dateOfPublish} /></span>
+                        </time>
+                    </article>
+                )
+            };
+
+            return (
+                <Route exact path={article.path} key={id} component={component}/>
+            )
+        });
+
         return (
-            <article className={singleArticle.mainArticle}>
-                <a id='top' className={singleArticle.topScroll}/>
-                <CloseArticleBtn path='/food'/>
-
-                <h1> {article.title} </h1>
-                <PictureArticle className={singleArticle.picArticle}/>
-                <p> {article.description} </p>
-
-                <h2> {article.firstH2} </h2>
-                <p> {article.text1} </p>
-
-                <h2> {article.secondH2} </h2>
-                <p> {article.text2} </p>
-
-                <h2> {article.thirdH2} </h2>
-                <p> {article.text3} </p>
-
-                <br/>
-                <time className={singleArticle.publish}>
-                    <span>Опубликовано <DiffPublishDates date={article.dateOfPublish} /></span>
-                </time>
-            </article>
-        )
-    };
-
-    return (
-        <Route exact path={article.path} key={id} component={component}/>
-    )
-});
-
-const FoodArticles = () => {
-    return (
-        <React.Fragment>
-            {ArticleTemplate}
-        </React.Fragment>
-    )
-};
-
-export default FoodArticles;
+            <React.Fragment>
+                {ArticleTemplate}
+            </React.Fragment>
+        );
+    }
+}

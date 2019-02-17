@@ -9,12 +9,10 @@ footer a {
     align-items: center;
     margin: 0 auto;
     padding: 0;
-    /*color: #24305e;*/
     width: 100%;
     max-width: 1200px;
     min-height: 50px;
 }
-
 
 /* for gray sectionField */
 .fourColumns {
@@ -26,7 +24,7 @@ footer a {
     font-weight: 700;
     text-transform: uppercase;
     margin: 25px 10px 0 10px;
-    color: #fff;
+    color: #f1f1f1;
 }
 
 .sectionField {
@@ -35,6 +33,9 @@ footer a {
     margin: 0 auto;
 }
 
+.sectionField .sectionСolumns {
+    padding: 15px 0;
+}
 
 /* for black footerFlex */
 .footerFlex,
@@ -53,13 +54,17 @@ footer a {
 .footerFlex {
     max-width: 2000px;
     margin: 0 auto;
-    padding-top: 50px;
+    /*padding: 25px 0 0;*/
+}
+
+.footerFlex .sectionСolumns {
+    border-top: 1px solid #c0c0c0;
 }
 
 .footerFlex li,
 footer li {
     list-style: none;
-    margin: 25px 10px;
+    margin: 20px 10px;
 }
 
 .sectionСolumns ul {
@@ -84,4 +89,8 @@ footer li {
     .boldStyle {
         margin: 25px auto 0;
     }
-}
+
+    .footerFlex .sectionСolumns {
+        margin: 0 40px;
+    }
+    }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GridFoodComponent from './gridFoodComponent';
+import GridComponent from "../gridComponent";
 import FoodArticles from "./foodArticles";
 
 import mainFoodStyle from './food.module.css';
@@ -15,59 +15,82 @@ import ImgSrc8 from "../../../img/Food8.jpg";
 import ImgSrc9 from "../../../img/Food9.jpg";
 
 class Food extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            pictures: [
-                ImgSrc1,
-                ImgSrc2,
-                ImgSrc3,
-                ImgSrc4,
-                ImgSrc5,
-                ImgSrc6,
-                ImgSrc7,
-                ImgSrc8,
-                ImgSrc9
-            ],
-            titles: [
-                'Title food name 1',
-                'Title food name 2',
-                'Title food name 3',
-                'Title food name 4',
-                'Title food name 5',
-                'Title food name 6',
-                'Title food name 7',
-                'Title food name 8',
-                'Title food name 9'
-            ],
-            texts: [
-                'Some food text 1.',
-                'Some food text 2.',
-                'Some food text 3.',
-                'Some food text 4.',
-                'Some food text 5.',
-                'Some food text 6.',
-                'Some food text 7.',
-                'Some food text 8.',
-                'Some food text 9.'
-            ],
-            links: [
-                '/food/article1#top',
-                '/food/article2#top',
-                '/food/article3#top',
-                '/food/article4#top',
-                '/food/article5#top',
-                '/food/article6#top',
-                '/food/article7#top',
-                '/food/article8#top',
-                '/food/article9#top'
-            ]
-        }
+    state = {
+        elements: [
+            {
+                id: 1,
+                picture: ImgSrc1,
+                title: 'Title name 1',
+                text: 'Some text 1.',
+                link: '/food/article1'
+            },
+            {
+                id: 2,
+                picture: ImgSrc2,
+                title: 'Title name 2',
+                text: 'Some text 2.',
+                link: '/food/article2'
+            },
+            {
+                id: 3,
+                picture: ImgSrc3,
+                title: 'Title name 3',
+                text: 'Some text 3.',
+                link: '/food/article3'
+            },
+            {
+                id: 4,
+                picture: ImgSrc4,
+                title: 'Title name 4',
+                text: 'Some text 4.',
+                link: '/food/article4'
+            },
+            {
+                id: 5,
+                picture: ImgSrc5,
+                title: 'Title name 5',
+                text: 'Some text 5.',
+                link: '/food/article5'
+            },
+            {
+                id: 6,
+                picture: ImgSrc6,
+                title: 'Title name 6',
+                text: 'Some text 6.',
+                link: '/food/article6'
+            },
+            {
+                id: 7,
+                picture: ImgSrc7,
+                title: 'Title name 7',
+                text: 'Some text 7.',
+                link: '/food/article7'
+            },
+            {
+                id: 8,
+                picture: ImgSrc8,
+                title: 'Title name 8',
+                text: 'Some text 8.',
+                link: '/food/article8'
+            },
+            {
+                id: 9,
+                picture: ImgSrc9,
+                title: 'Title name 9',
+                text: 'Some text 9.',
+                link: '/food/article9'
+            }
+        ],
+        gridStyle: mainFoodStyle
+    };
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 
     render() {
-        const { pictures, titles, texts, links } = this.state;
-        const gridComponent = pictures.map( (img, i) => <GridFoodComponent key={i} image={img} title={titles[i]} text={texts[i]} hidden='read' link={links[i]} />);
+        const { elements, gridStyle } = this.state;
+        const gridComponent = elements.map( (picture, id) => <GridComponent key={id} style={gridStyle} image={elements[id].picture} title={elements[id].title} text={elements[id].text} hidden='посетить' link={elements[id].link} />);
 
         return (
             <React.Fragment>
@@ -75,11 +98,13 @@ class Food extends Component {
 
             <main id='foodSection'>
                 <div className={mainFoodStyle.wrapper}>
+                    <h1 className={mainFoodStyle.sectionTitle}>РЕСТОРАНЫ И БАРЫ</h1>
                     <div className={mainFoodStyle.home}>
                         {gridComponent}
                     </div>
                 </div>
             </main>
+
             </React.Fragment>
         );
     }
