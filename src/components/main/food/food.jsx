@@ -14,7 +14,7 @@ import foodImg7 from "../../../img/Food7.jpg";
 import foodImg8 from "../../../img/Food8.jpg";
 import foodImg9 from "../../../img/Food9.jpg";
 
-class Food extends Component {
+export default class Food extends Component {
     state = {
         elements: [
             {
@@ -84,10 +84,6 @@ class Food extends Component {
         gridStyle: mainFoodStyle
     };
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
-
     render() {
         const { elements, gridStyle } = this.state;
         const gridComponent = elements.map( (picture, id) => <GridComponent key={id} style={gridStyle} image={elements[id].picture} title={elements[id].title} text={elements[id].text} hidden='посетить' link={elements[id].link} />);
@@ -109,5 +105,3 @@ class Food extends Component {
         );
     }
 }
-
-export default Food;

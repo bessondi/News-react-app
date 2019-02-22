@@ -14,7 +14,7 @@ import enttImg7 from "../../../img/Entt7.jpg";
 import enttImg8 from "../../../img/Entt8.jpg";
 import enttImg9 from "../../../img/Entt9.jpg";
 
-class Entertainment extends Component {
+export default class Entertainment extends Component {
     state = {
         elements: [
             {
@@ -84,10 +84,6 @@ class Entertainment extends Component {
         gridStyle: mainEnttStyle
     };
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
-
     render() {
         const { elements, gridStyle } = this.state;
 
@@ -110,5 +106,3 @@ class Entertainment extends Component {
         );
     }
 }
-
-export default Entertainment;

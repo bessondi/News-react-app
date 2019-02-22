@@ -17,7 +17,7 @@ import newsImg11 from "../../../img/SPb11.jpg";
 import newsImg12 from "../../../img/SPb12.jpg";
 
 
-class News extends Component {
+export default class News extends Component {
     state = {
         gridStyle:  mainNewsStyle,
         elements: [
@@ -144,5 +144,3 @@ class News extends Component {
         );
     }
 }
-
-export default News;

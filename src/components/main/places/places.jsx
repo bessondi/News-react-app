@@ -11,7 +11,7 @@ import placesImg4 from "../../../img/City4.jpg";
 import placesImg5 from "../../../img/City5.jpg";
 import placesImg6 from "../../../img/City6.jpg";
 
-class Places extends Component {
+export default class Places extends Component {
     state = {
         elements: [
             {
@@ -60,10 +60,6 @@ class Places extends Component {
         gridStyle: mainPlacesStyle
     };
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
-
     render() {
         const { elements, gridStyle } = this.state;
         const gridComponent = elements.map( (picture, id) => <GridComponent key={id} style={gridStyle} image={elements[id].picture} title={elements[id].title} text={elements[id].text} hidden='смотреть' link={elements[id].link} />);
@@ -85,5 +81,3 @@ class Places extends Component {
         );
     }
 }
-
-export default Places;

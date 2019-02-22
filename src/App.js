@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Route} from "react-router-dom";
 
 import Header from './components/header/header';
+import NewsArticles from "./components/main/news/newsArticles";
 import Home from "./components/main/home/home";
 import News from './components/main/news/news';
 import Entertainment from './components/main/entertainment/entertainment';
@@ -11,12 +12,10 @@ import Footer from './components/footer/footer';
 
 import './App.css';
 
-import NewsArticles from "./components/main/news/newsArticles";
 
 // TODO:
 // think about homepage image
 // fill texts to the articles
-// refactor articles
 // add animations
 
 
