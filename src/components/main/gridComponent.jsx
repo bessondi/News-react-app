@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 
-class GridComponent extends Component {
+export default class GridComponent extends Component {
     render() {
         const {style, image, link, title, text, hidden} = this.props;
 
@@ -33,5 +33,3 @@ class GridComponent extends Component {
         )
     }
 }
-
-export default GridComponent;

@@ -12,10 +12,12 @@ import Img3 from "../../../img/SPb3.jpg";
 import Img4 from "../../../img/SPb4.jpg";
 import Img5 from "../../../img/SPb5.jpg";
 import Img6 from "../../../img/SPb6.jpg";
-// import Img7 from "../../../img/SPb7.jpg";
-// import Img8 from "../../../img/SPb8.jpg";
-// import Img9 from "../../../img/SPb9.jpg";
-// import Img10 from "../../../img/SPb10.jpg";
+import Img7 from "../../../img/SPb7.jpg";
+import Img8 from "../../../img/SPb8.jpg";
+import Img9 from "../../../img/SPb9.jpg";
+import Img10 from "../../../img/SPb10.jpg";
+import Img11 from "../../../img/SPb11.jpg";
+import Img12 from "../../../img/SPb12.jpg";
 
 const articles = [
     {
@@ -96,58 +98,84 @@ const articles = [
         secondH2: 'Абзац 2',
         text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
     },
-    // {
-    //     id: 7,
-    //     name: 'Article7',
-    //     dateOfPublish: '2019, 1, 13, 13, 0',
-    //     path: '/news/article7',
-    //     title: 'Название статьи 7.',
-    //     img: `${Img7}`,
-    //     description: 'Описание. Lorem ipsum dolor sit amet.',
-    //     firstH2: 'Абзац 1',
-    //     text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-    //     secondH2: 'Абзац 2',
-    //     text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
-    // },
-    // {
-    //     id: 8,
-    //     name: 'Article8',
-    //     dateOfPublish: '2019, 1, 13, 13, 0',
-    //     path: '/news/article8',
-    //     title: 'Название статьи 8.',
-    //     img: `${Img8}`,
-    //     description: 'Описание. Lorem ipsum dolor sit amet.',
-    //     firstH2: 'Абзац 1',
-    //     text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-    //     secondH2: 'Абзац 2',
-    //     text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
-    // },
-    // {
-    //     id: 9,
-    //     name: 'Article9',
-    //     dateOfPublish: '2019, 1, 13, 13, 0',
-    //     path: '/news/article9',
-    //     title: 'Название статьи 9.',
-    //     img: `${Img9}`,
-    //     description: 'Описание. Lorem ipsum dolor sit amet.',
-    //     firstH2: 'Абзац 1',
-    //     text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-    //     secondH2: 'Абзац 2',
-    //     text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
-    // },
-    // {
-    //     id: 10,
-    //     name: 'Article10',
-    //     dateOfPublish: '2019, 1, 13, 13, 0',
-    //     path: '/news/article10',
-    //     title: 'Название статьи 10.',
-    //     img: `${Img10}`,
-    //     description: 'Описание. Lorem ipsum dolor sit amet.',
-    //     firstH2: 'Абзац 1',
-    //     text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-    //     secondH2: 'Абзац 2',
-    //     text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
-    // },
+    {
+        id: 7,
+        name: 'Article7',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article7',
+        title: 'Название статьи 7.',
+        img: `${Img7}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
+    {
+        id: 8,
+        name: 'Article8',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article8',
+        title: 'Название статьи 8.',
+        img: `${Img8}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
+    {
+        id: 9,
+        name: 'Article9',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article9',
+        title: 'Название статьи 9.',
+        img: `${Img9}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
+    {
+        id: 10,
+        name: 'Article10',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article10',
+        title: 'Название статьи 10.',
+        img: `${Img10}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
+    {
+        id: 11,
+        name: 'Article11',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article11',
+        title: 'Название статьи 11.',
+        img: `${Img11}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
+    {
+        id: 12,
+        name: 'Article12',
+        dateOfPublish: '2019, 1, 13, 13, 0',
+        path: '/news/article12',
+        title: 'Название статьи 12.',
+        img: `${Img12}`,
+        description: 'Описание. Lorem ipsum dolor sit amet.',
+        firstH2: 'Абзац 1',
+        text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
+        secondH2: 'Абзац 2',
+        text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+    },
 ];
 
 export default class NewsArticles extends Component {
@@ -161,8 +189,8 @@ export default class NewsArticles extends Component {
         const ArticleTemplate = articles.map((article, id) => {
 
             const PictureArticle = styled.div`
-        background-image: url(${article.img});
-        `;
+            background-image: url(${article.img});
+            `;
 
             const component = () => {
                 return (
@@ -170,7 +198,7 @@ export default class NewsArticles extends Component {
                         <CloseArticleBtn path='/news'/>
 
                         <h1> {article.title} </h1>
-                        <PictureArticle className={singleArticle.picArticle}/>
+                        <PictureArticle className={singleArticle.picArticle} />
                         <p> {article.description} </p>
 
                         <h2> {article.firstH2} </h2>
@@ -191,7 +219,7 @@ export default class NewsArticles extends Component {
             };
 
             return (
-                <Route exact path={article.path} key={id} component={component}/>
+                <Route path={article.path} key={id} component={component}/>
             )
         });
 

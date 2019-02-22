@@ -11,9 +11,13 @@ import Footer from './components/footer/footer';
 
 import './App.css';
 
+import NewsArticles from "./components/main/news/newsArticles";
+
 // TODO:
+// think about homepage image
 // fill texts to the articles
-// add more articles in sections
+// refactor articles
+// add animations
 
 
 class App extends Component {
@@ -21,6 +25,8 @@ class App extends Component {
         return (
                 <div className="App">
                     <Header/>
+                    <NewsArticles/>
+
                     <Route exact path='/' component={Home}/>
                     <Route path='/news' component={News}/>
                     <Route path='/entertainment' component={Entertainment}/>
