@@ -6,12 +6,12 @@ import DiffPublishDates from "../DiffPublishDates";
 import styled from 'styled-components';
 import singleArticle from "../Article.module.css";
 
-import Img1 from "../../../img/City1.jpg";
-import Img2 from "../../../img/City2.jpg";
-import Img3 from "../../../img/City3.jpg";
-import Img4 from "../../../img/City4.jpg";
-import Img5 from "../../../img/City5.jpg";
-import Img6 from "../../../img/City6.jpg";
+import placesImg1 from "../../../img/City1.jpg";
+import placesImg2 from "../../../img/City2.jpg";
+import placesImg3 from "../../../img/City3.jpg";
+import placesImg4 from "../../../img/City4.jpg";
+import placesImg5 from "../../../img/City5.jpg";
+import placesImg6 from "../../../img/City6.jpg";
 
 const articles = [
     {
@@ -20,7 +20,7 @@ const articles = [
         path: '/places/article1',
         dateOfPublish: '2019, 2, 5, 12, 5',
         title: 'Название статьи 1.',
-        img: `${Img1}`,
+        img: placesImg1,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
@@ -35,7 +35,7 @@ const articles = [
         path: '/places/article2',
         dateOfPublish: '2019, 2, 1, 12, 5',
         title: 'Название статьи 2.',
-        img: `${Img2}`,
+        img: placesImg2,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
@@ -46,7 +46,7 @@ const articles = [
         path: '/places/article3',
         dateOfPublish: '2019, 1, 1, 12, 5',
         title: 'Название статьи 3.',
-        img: `${Img3}`,
+        img: placesImg3,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
@@ -61,7 +61,7 @@ const articles = [
         path: '/places/article4',
         dateOfPublish: '2019, 0, 1, 12, 5',
         title: 'Название статьи 4.',
-        img: `${Img4}`,
+        img: placesImg4,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
@@ -72,7 +72,7 @@ const articles = [
         path: '/places/article5',
         dateOfPublish: '2019, 0, 5, 12, 5',
         title: 'Название статьи 5.',
-        img: `${Img5}`,
+        img: placesImg5,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
@@ -85,7 +85,7 @@ const articles = [
         path: '/places/article6',
         dateOfPublish: '2018, 1, 1, 12, 5',
         title: 'Название статьи 6.',
-        img: `${Img6}`,
+        img: placesImg6,
         description: 'Описание. Lorem ipsum dolor sit amet.',
         firstH2: 'Абзац 1',
         text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
