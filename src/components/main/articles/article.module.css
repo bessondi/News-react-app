@@ -6,6 +6,13 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 
+.description {
+    float: right;
+    margin-top: 0;
+    font-size: 1rem;
+    color: #9a918c;
+}
+
 .mainArticle p,
 .mainArticle h1,
 .mainArticle h2,
@@ -15,7 +22,14 @@
 
 .mainArticle h1 {
     font-size: 2rem;
+    max-width: 800px;
 }
+
+.mainArticle h2 {
+    margin: 50px auto;
+    font-size: 1.8rem;
+}
+
 .mainArticle h1,
 .mainArticle h2,
 .mainArticle h3 {

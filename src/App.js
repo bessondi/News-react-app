@@ -17,6 +17,8 @@ import './App.css';
 // think about homepage image
 // fill texts to the articles
 // add animations
+// add weather in header
+// add map in places
 
 
 class App extends Component {

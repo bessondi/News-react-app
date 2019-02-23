@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ArticlesTemplate from "../articlesTemplate";
+import ArticlesTemplate from "../articles/articlesTemplate";
 
 import Img1 from "../../../img/SPb1.jpg";
 import Img2 from "../../../img/SPb2.jpg";
@@ -21,158 +21,141 @@ export default class NewsArticles extends Component {
             id: 1,
             name: 'Article',
             path: '/news/article1',
-            dateOfPublish: '2019, 1, 15, 12, 0',
-            title: 'Название статьи 1.',
+            dateOfPublish: '2019, 3, 15, 12, 0',
+            title: 'Весна в Петербурге.',
             img: `${Img1}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nobis!',
-            thirdH2: 'Абзац 3',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: 'Главный синоптик Петербурга — о том, когда наступит весна.',
+            text1: 'На прошлой неделе в Петербурге был зафиксирован температурный рекорд — плюс 4,8 градуса. Это больше рекорда 90-летней давности, когда в 1925 году в этот день зафиксировали плюс 4,7 градуса. Периодические оттепели петербуржцы наблюдают весь февраль. \n Мы узнали у главного синоптика ФГБУ «Северо-Западное управление по гидрометеорологии и мониторингу окружающей среды» Александра Колесова, стоит ли Петербургу ждать ранней весны.',
+            secondH2: 'АЛЕКСАНДР КОЛЕСОВ, синоптик:',
+            text2: 'Впереди много дней с плюсовой температурой воздуха, но я не могу сказать, что скоро наступит весна: для неё ещё всё-таки рано. \n В связи с тем, что ожидается вынос тёплых воздушных масс западными ветрами, будет периодически наблюдаться плюсовая температура: какие-то дни будут более тёплыми, какие-то — более холодными. К четвергу мы ждём температуру в плюс два-четыре градуса, затем циклон уйдёт и будет похолодание. Устойчивой плюсовой температуры можно ждать только в апреле. \n Конечно, сейчас в Петербурге намного теплее, чем обычно. Прошёл февраль, и уже зафиксирована аномалия в шесть градусов. Это очень тепло, но не экстремально — подобное было в 89–90-х годах. Думаю, что впереди ещё будут продолжительные морозы: в Ленобласти сейчас зафиксировано 20–27 градусов ниже нуля. Будет какой-то заток холодных воздушных масс, антициклон — будет и падение температур.'
         },
         {
             id: 2,
             name: 'Article2',
             dateOfPublish: '2019, 1, 14, 7, 0',
             path: '/news/article2',
-            title: 'Название статьи 2.',
+            title: 'Санкт-Петербург вошёл в топ-100 лучших городов мира.',
             img: `${Img2}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: ' World’s Best Cities 2019',
+            text1: 'Почётный список World’s Best Cities 2019 основывали на качестве естественной и городской окружающей среды города, достопримечательностях и инфраструктуре, развитии искусства, развлечений и гастрономии. В итоге Санкт-Петербург расположился в рейтинге на 54-м месте, уступив столицам крупных и богатых стран.',
+            text2: 'В первой десятке оказались следующие города: Лондон, Париж, Нью-Йорк, Токио, Барселона, Москва, Чикаго, Сингапур, Дубай и Сан-Франциско. \n Кроме критериев отбора, указанных выше, эксперты изучали отзывы и комментарии в соцсетях, онлайн-рейтинги на TripAdvisor, в Instagram, Facebook и данные Google Trends.\n Сам рейтинг составляло Resonance Consultancy, одно из ведущих мировых консультационных агентств в сферах туризма, недвижимости и экономического развития.\n Ранее мы писали о том, что город на Неве признали самым романтичным городом в России.'
         },
         {
             id: 3,
             name: 'Article3',
             dateOfPublish: '2019, 1, 13, 15, 0',
             path: '/news/article3',
-            title: 'Название статьи 3.',
+            title: 'Россияне смогут посещать Японию без визы.',
             img: `${Img3}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nobis!',
-            thirdH2: 'Абзац 3',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: 'Только загранпаспорт?',
+            text1: 'Посетить Японию в скором времени станет возможным всего лишь при наличии загранпаспорта. На данный момент в правительстве страны идёт обсуждение вопроса об отмене краткосрочных виз россиянам.',
+            secondH2: '90 дней.',
+            text2: 'Въезд в страну предлагают осуществлять по предварительной регистрации данных загранпаспорта в консульстве, причём сделать это можно будет на сайте. При въезде в Японию без визы можно будет пребывать в стране до 90 дней. Когда именно будет введена новая система, пока неясно. \n Напомним, что ещё с прошлого года для россиян появилась отличная возможность посещать Японию по упрощённому визовому режиму в составе туристических групп, приобретающих пакетные туры.'
         },
         {
             id: 4,
             name: 'Article4',
             dateOfPublish: '2019, 0, 13, 15, 0',
             path: '/news/article4',
-            title: 'Название статьи 4.',
+            title: 'В Эрмитаж после реставрации вернулась картина «Флора», которую приписывали кисти Леонардо да Винчи.',
             img: `${Img4}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            text1: 'Одна из жемчужин коллекции живописи Государственного Эрмитажа создана самым образованным и утончённым учеником да Винчи — Франческо Мельци. После реставрации богиню весеннего цветения и покровительницу растений можно увидеть в другом свете: после снятия слоёв пожелтевшего лака раскрылся более холодный общий тон картины, проявилась истинная палитра художника.',
+            text2: '«Техническое состояние картины до начала реставрации не вызывало опасений, но авторская, насыщенная цветом живопись была скрыта под толстым слоем разновременных сильно пожелтевших, местами помутневших лаков, что искажало представление о колорите и нарушало цветовую гармонию композиции», — рассказывают в Эрмитаже.\n В шедевре Мельци все растения наделены символическим смыслом. Например, анемон — по-гречески ветер, аквилегия связана с плодородием, жасмин олицетворяет чистоту. В античной мифологии Флора — супруга бога западного ветра Зефира и мать всех растений, которая питает и даёт жизнь.\n Картину можно увидеть в Аполлоновом зале Зимнего дворца.'
         },
         {
             id: 5,
             name: 'Article5',
             dateOfPublish: '2019, 0, 1, 3, 0',
             path: '/news/article5',
-            title: 'Название статьи 5.',
+            title: 'Завтра можно будет наблюдать яркое суперлуние.',
             img: `${Img5}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nobis!'
+            description: 'Фото: unsplash.com',
+            text1: 'Завтра луна подойдёт очень близко к Земле и будет ярко освещена Солнцем, поэтому спутник будет выглядеть эффектно — как будто увеличится в размерах. В следующий раз такое может произойти через семь лет. \n «В этот день Луна окажется на минимальном расстоянии от Земли в 2019 году. 19 февраля в 12:07 по московскому времени Луна подойдёт к нашей планете на 356 761 километр, а в 18:54 произойдёт полнолуние», — сообщает официальный сайт Московского планетария \n Суперлуние — это астрономическое явление, происходящее при совпадении полнолуния или новолуния с моментом наибольшего сближения Луны и Земли. Всё дело в том, что Луна вращается вокруг Земли не по сферической, а по эллиптической орбите и то подходит ближе к нашей планете, то отходит дальше от неё. В результате расстояние между Землёй и Луной варьируется от 357 до 406 тысяч километров. \n В прошлом году максимальное приближение спутника совпало с затмением, поэтому Луна казалась красной.',
         },
         {
             id: 6,
             name: 'Article6',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article6',
-            title: 'Название статьи 6.',
+            title: 'В честь восточного Нового года Дворцовый мост будет сиять красным цветом.',
             img: `${Img6}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            text1: 'Сегодня вечером включат красную праздничную подсветку моста. Красный цвет будет озарять город на протяжении двух недель.',
+            text2: 'Этой традиции в Петербурге уже пять лет. Подсветку включат в 17:25. \n Также в эти дни в Петербурге проходит фестиваль «Китайский Новый год — весёлый праздник весны». Среди мероприятий праздничный концерт «Китайский Новый год» Сучжоуского национального оркестра Китая, его дадут в Мариинском театре 7 февраля. Также в Шереметевском дворце пройдёт выставка «Следующая остановка — „Китай — Петербург“». Полную программу фестиваля можно посмотреть на сайте комитета по внешним связям Санкт-Петербурга.'
         },
         {
             id: 7,
-            name: 'Article7',
+            name: 'Спортсмен из Петербурга взял серебро Европейского юношеского олимпийского фестиваля\n',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article7',
-            title: 'Название статьи 7.',
+            title: 'Спортсмен из Петербурга взял серебро Европейского юношеского олимпийского фестиваля.',
             img: `${Img7}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: '1500 метров.',
+            text1: 'Шорт-трекист Владимир Балбеков стал вторым в заезде на дистанцию 1500 метров. Медаль, завоёванная Владимиром, стала первой в копилке российской сборной на этих соревнованиях.',
+            text2: 'Владимир Балбеков — воспитанник школы № 357 Приморского района «Олимпийские надежды». Его результат на соревнованиях — 2 минуты 25,074 секунды.\n Победителем же забега стал венгерский шорт-трекист Аттила Талабош, с результатом 2 минуты 24,975 секунды. А третьим спортсмен из Турции.',
+            text3: 'Европейский юношеский олимпийский фестиваль-2019 проходит в Сараево и Восточном Сараево (Босния и Герцеговина). В нём принимают участие спортсмены в возрасте от 14 до 18 лет в следующих дисциплинах: горные лыжи, биатлон, лыжные гонки, фигурное катание, хоккей, шорт-трек, кёрлинг и сноуборд.'
         },
         {
             id: 8,
             name: 'Article8',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article8',
-            title: 'Название статьи 8.',
+            title: 'В Анненкирхе проведут благотворительный концерт Миши Мищенко.',
             img: `${Img8}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            text1: 'В лютеранской церкви Анненкирхе на Кирочной улице состоится благотворительный концерта пианиста и композитора Миши Мищенко. Вырученные средства пойдут проекту #АннаПомогает. Деньги передадут городским благотворительным организациям.\n Выступление неоклассика начнется в 19:00, приобрести билеты можно здесь, их стоимость составляет от 600 рублей (за стоячие места на балконе) до 1 000 рублей (за места в зале). Для студентов предусмотрена скидка.\n Ранее в церкви провели благотворительный вечер в поддержку центра «Антон тут рядом».'
         },
         {
             id: 9,
             name: 'Article9',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article9',
-            title: 'Название статьи 9.',
+            title: 'На Разъезжей улице заработал бар Brewmen & Redman\'s Kitchen',
             img: `${Img9}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            text1: 'На Разъезжей улице в техническом режиме заработал бар Brewmen & Redman\'s Kitchen — совместный проект совладельца митерии Chuck Ромы Редмана и Артема Горелова — владельца крафтовой пивоварни и ресторана Brewmen в Великом Новгороде. ',
+            secondH2: 'Идея',
+            text2: 'В барной карте собрано 25 сортов разливного пива (220–350 рублей), еще около 100 позиций продают по бутылкам (290–500 рублей). Также есть небольшая подборка коктейлей (370–480 рублей), вина (310 рублей за бокал) и крепкого алкоголя.  На закуску предлагают преимущественно мясные блюда. \n Меню до конца не сформировано, но уже сейчас в нем можно найти ребра BBQ (480 рублей), говяжьи колбаски с тушеной капустой (380 рублей), брискет (420 рублей) и фирменный бургер с взорванной свининой (380 рублей).',
+            thirdH2: 'Интерьер',
+            text3: 'Заведение оформлено в стиле лофт с очищенными от штукатурки кирпичными стенами, основательной кожаной мебелью, деревом и элементами декора из промышленной стали.'
         },
         {
             id: 10,
             name: 'Article10',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article10',
-            title: 'Название статьи 10.',
+            title: '«Магнит» представил обновленный бренд для всех магазинов сети',
             img: `${Img10}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: '25 лет.',
+            text1: 'Сеть «Магнит» к своему 25-летию представила обновленный бренд, который объединит все существующие магазины и аптеки общим оформлением и концепцией, связанной с заботой и вниманием.\n Новый логотип сети сохранил цвет и букву «М», но получил другую форму — он символизирует две руки. На фасадах, элементах навигации в торговых залах и упаковках фирменной продукции используют оригинальную систему пиктограмм, напоминающих эмодзи и иконки в смартфоне. Слоган нового бренда — «Давайте дружить семьями!».\n В разработке стилистики участвовали креативное агентство More  и брендинговое агентство «Супрематика».\n Объекты под единым брендом начнут открываться с марта 2019 года. В дальнейшем магазины всех шести форматов будут иметь не только сходный дизайн, но и общую программу лояльности.'
         },
         {
             id: 11,
             name: 'Article11',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article11',
-            title: 'Название статьи 11.',
+            title: '«Дом Бенуа» запускает два образовательных курса об ивент-индустрии.',
             img: `${Img11}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
+            description: 'Фото: unsplash.com',
+            firstH2: 'Два новых курса, посвященных ивент-индустрии.',
+            text1: 'Петербургский образовательный центр «Дом Бенуа» запускает два новых курса, посвященных ивент-индустрии. Слушатели смогут узнать о продвижении мероприятий и новых технологиях в этой сфере.\n Занятия в рамках курса «Комплексное продвижение мероприятий» продлятся с 12 по 28 марта. Промоутер летних петербургских фестивалей и учредитель One Love Fest Зоя Скобельницына расскажет о контенте в разных социальных сетях и работе с блогерами. Стоимость курса составляет 9 тысяч рублей, при покупке до 25 февраля действует скидка.\n Продвинутый курс по ивент-менеджменту подойдет тем, кто хочет улучшить собственные компетенции и узнать о последних тенденциях. Занятия продлятся с 11 марта по 8 апреля, стоимость курса — 19 тысяч рублей. Спикерами станут представители «Дома Бенуа», PR-агентств и других компаний.\n Участникам предложат 13 лекций, посвященных спонсорству событий, продвижению спортивных мероприятий и другим темам. Организаторы разыгрывают одно бесплатное место. Чтобы выиграть его, нужно рассказать им об идее социально-полезного мероприятия.'
         },
         {
             id: 12,
             name: 'Article12',
             dateOfPublish: '2019, 1, 13, 13, 0',
             path: '/news/article12',
-            title: 'Название статьи 12.',
+            title: 'Круглые столы, спектакль и выставка. В Петербурге проведут серию событий к юбилею Ахматовой.',
             img: `${Img12}`,
-            description: 'Описание. Lorem ipsum dolor sit amet.',
-            firstH2: 'Абзац 1',
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.',
-            secondH2: 'Абзац 2',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur esse facere molestiae nesciunt, reiciendis temporibus voluptates. Ab adipisci alias, aut facere id, illum iste modi optio quis tenetur voluptas.'
-        },
+            description: 'Фото: unsplash.com',
+            text1: 'Музей Анны Ахматовой в Фонтанном доме запустил серию событий, приуроченную к 130-летию поэтессы и 30-летию музея. Мероприятия из этого цикла будут проводить в течение всего года, юбилею Ахматовой посвятят фестивали «Бродский Drive» и «А-Кино».\n Первым мероприятием проекта станет выставка фотографий Дмитрия Горячева «Первая пятилетка». Посетителям представят снимки, сделанные в Петербурге в период с 2001 по 2005 годы.\nЧерно-белые фотографии Горячева помогут понять, как изменился город за последние 15 лет — например, на Невском проспекте больше нет казино и маршруток. Экспозиция будет работать с 21 февраля по 17 марта в Большом зале, более подробная информация представлена здесь.'
+        }
     ];
 
     render() {

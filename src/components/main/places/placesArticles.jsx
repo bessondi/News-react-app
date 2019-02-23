@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ArticlesTemplate from "../articlesTemplate";
+import ArticlesTemplate from "../articles/articlesTemplate";
 
 import placesImg1 from "../../../img/City1.jpg";
 import placesImg2 from "../../../img/City2.jpg";

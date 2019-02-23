@@ -29,16 +29,28 @@ export default class ArticlesTemplate extends Component {
 
                         <h1> {article.title} </h1>
                         <PictureArticle className={singleArticle.picArticle}/>
-                        <p> {article.description} </p>
+                        <span className={singleArticle.description}> {article.description} </span>
 
                         <h2> {article.firstH2} </h2>
-                        <p> {article.text1} </p>
+                        {   this.props.text1 ?
+                            <p> {article.text1} </p> :
+                            article.text1 !== undefined ?
+                            article.text1.split('\n').map( (text) => <p>{text}</p>) :
+                            null }
 
-                        <h2> {article.secondH2} </h2>
-                        <p> {article.text2} </p>
+                        <h3> {article.secondH2} </h3>
+                        {   this.props.text2 ?
+                            <p> {article.text2} </p> :
+                            article.text2 !== undefined ?
+                            article.text2.split('\n').map( (text) => <p>{text}</p>) :
+                            null }
 
-                        <h2> {article.thirdH2} </h2>
-                        <p> {article.text3} </p>
+                        <h3> {article.thirdH2} </h3>
+                        {   this.props.text3 ?
+                            <p> {article.text3} </p> :
+                            article.text3 !== undefined ?
+                            article.text3.split('\n').map( (text) => <p>{text}</p>) :
+                            null }
 
                         <br/>
                         <time className={singleArticle.publish}>

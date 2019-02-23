@@ -24,43 +24,41 @@ export default class News extends Component {
             {
                 id: 1,
                 picture: newsImg1,
-                title: 'Title name 1',
-                text: 'Some text 1.',
+                title: 'Весна в Петербурге',
+                text: 'Главный синоптик Петербурга — о том, когда наступит весна',
                 link: '/news/article1'
             },
             {
                 id: 2,
                 picture: newsImg2,
-                title: 'Title name 2',
-                text: 'Some text 2.',
+                title: 'Санкт-Петербург вошёл в топ-100 лучших городов мира',
+                text: 'По версии World’s Best Cities 2019',
                 link: '/news/article2'
             },
             {
                 id: 3,
                 picture: newsImg3,
-                title: 'Title name 3',
-                text: 'Some text 3.',
+                title: 'Россияне смогут посещать Японию без визы',
+                text: 'При въезде в Японию без визы можно будет пребывать в стране до 90 дней',
                 link: '/news/article3'
             },
             {
                 id: 4,
                 picture: newsImg4,
-                title: 'Title name 4',
-                text: 'Some text 4.',
+                title: 'В Эрмитаж после реставрации вернулась картина «Флора»',
                 link: '/news/article4'
             },
             {
                 id: 5,
                 picture: newsImg5,
-                title: 'Title name 5',
-                text: 'Some text 5.',
+                title: 'Завтра можно будет наблюдать яркое суперлуние',
+                text: 'В следующий раз такое может произойти через семь лет',
                 link: '/news/article5'
             },
             {
                 id: 6,
                 picture: newsImg6,
-                title: 'Title name 6',
-                text: 'Some text 6.',
+                title: 'В честь восточного Нового года Дворцовый мост будет сиять красным цветом',
                 link: '/news/article6'
             }
         ],
@@ -68,43 +66,40 @@ export default class News extends Component {
             {
                 id: 7,
                 picture: newsImg7,
-                title: 'Title name 7',
-                text: 'Some text 7.',
+                title: 'Спортсмен из Петербурга взял серебро Европейского юношеского олимпийского фестиваля',
+                text: 'Медаль спортсмена стала первой в копилке российской сборной на этих соревнованиях',
                 link: '/news/article7'
             },
             {
                 id: 8,
                 picture: newsImg8,
-                title: 'Title name 8',
-                text: 'Some text 8.',
+                title: 'В Анненкирхе проведут благотворительный концерт Миши Мищенко',
                 link: '/news/article8'
             },
             {
                 id: 9,
                 picture: newsImg9,
-                title: 'Title name 9',
-                text: 'Some text 9.',
+                title: 'На Разъезжей улице заработал бар Brewmen & Redman\'s Kitchen',
                 link: '/news/article9'
             },
             {
                 id: 10,
                 picture: newsImg10,
-                title: 'Title name 10',
-                text: 'Some text 10.',
+                title: '«Магнит» представил обновленный бренд для всех магазинов сети',
+                text: 'Сети 25 лет',
                 link: '/news/article10'
             },
             {
                 id: 11,
                 picture: newsImg11,
-                title: 'Title name 11',
-                text: 'Some text 11.',
+                title: '«Дом Бенуа» запускает два образовательных курса об ивент-индустрии',
+                text: 'Два новых курса, посвященных ивент-индустрии',
                 link: '/news/article11'
             },
             {
                 id: 12,
                 picture: newsImg12,
-                title: 'Title name 12',
-                text: 'Some text 12.',
+                title: 'Круглые столы, спектакль и выставка. В Петербурге проведут серию событий к юбилею Ахматовой',
                 link: '/news/article12'
             }
         ]
