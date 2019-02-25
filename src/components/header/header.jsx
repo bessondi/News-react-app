@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
-
 import Today from "./date";
+import Weather from "./weather";
 import BurgerBtn from './menuBtn/navMenu';
 
 import headerStyle from './header.module.css';
 
 class Header extends Component {
     render() {
-
         return (
             <header>
                 <nav>
@@ -24,9 +23,12 @@ class Header extends Component {
                             <li><NavLink to='/food' activeClassName={headerStyle.activeLink} className={headerStyle.boxBorder}>ЕДА</NavLink></li>
                         </ul>
                     </div>
+
                     <div className={headerStyle.headerRight}>
-                       <Today/>
+                        <Today/>
+                        <Weather/>
                     </div>
+
                     <BurgerBtn/>
                 </nav>
             </header>

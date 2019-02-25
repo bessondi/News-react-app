@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import headerStyle from './header.module.css';
 
 class Today extends Component {
     render() {
@@ -8,7 +9,7 @@ class Today extends Component {
         const todayDate = ( date.getDate() + " " + month[date.getMonth()] + ", " + day[date.getDay()] );
 
         return (
-            <span>Сегодня {todayDate}</span>
+            <span className={headerStyle.date}>Сегодня {todayDate}</span>
         )
     }
 }
