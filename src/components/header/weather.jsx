@@ -13,7 +13,7 @@ class Weather extends Component {
             .then( data => data.json() )
             .then( data => {
                 this.setState({
-                    temperature: data.main.temp,
+                    temperature: Math.round(data.main.temp),
                     description: data.weather[0].description,
                     icon: data.weather[0].icon
                 })

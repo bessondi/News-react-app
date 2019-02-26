@@ -11,6 +11,7 @@ h3 {
     padding-bottom: 25px;
     border-bottom: 15px solid #fab131;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .wrapper {
@@ -56,6 +57,7 @@ h3 {
 
 .pictureWrap > div:hover {
     filter: brightness(135%);
+    transition: 0.3s;
 }
 
 

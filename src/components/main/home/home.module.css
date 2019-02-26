@@ -1,9 +1,9 @@
 .ImgSection {
     max-width: 1200px;
-    margin: 25px auto;
+    margin: 0 auto;
 }
 
-.Img {
+.ImgHome {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,5 +15,12 @@
 @media screen and (max-width: 1024px) {
     .homeTitle {
         font-size: 1.5rem;
+    }
+}
+
+/* screen < 640 px */
+@media screen and (max-width: 640px) {
+    .ImgHome {
+        margin-top: 70px;
     }
 }

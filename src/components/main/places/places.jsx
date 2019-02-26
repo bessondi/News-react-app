@@ -17,43 +17,42 @@ export default class Places extends Component {
             {
                 id: 1,
                 picture: placesImg1,
-                title: 'Title name 1',
-                text: 'Some text 1.',
+                title: 'Сквер знаков зодиака',
+                text: '12 колонн',
                 link: '/places/article1'
             },
             {
                 id: 2,
                 picture: placesImg2,
-                title: 'Title name 2',
-                text: 'Some text 2.',
+                title: 'Главпочтамт',
+                text: 'Стеклянный купол-фонарь и первый атриум Петербурга',
                 link: '/places/article2'
             },
             {
                 id: 3,
                 picture: placesImg3,
-                title: 'Title name 3',
-                text: 'Some text 3.',
+                title: 'Усадьба Демидовых',
+                text: 'Особняк в классическом стиле',
                 link: '/places/article3'
             },
             {
                 id: 4,
                 picture: placesImg4,
-                title: 'Title name 4',
-                text: 'Some text 4.',
+                title: 'Музей-фотоателье Карла Буллы',
                 link: '/places/article4'
             },
             {
                 id: 5,
                 picture: placesImg5,
-                title: 'Title name 5',
+                title: 'Доходный дом К. И. Розенштейна',
                 text: 'Some text 5.',
                 link: '/places/article5'
             },
             {
                 id: 6,
                 picture: placesImg6,
-                title: 'Title name 6',
-                text: 'Some text 6.',
+                title: 'Вокзал станции Новый Петергоф',
+                text: 'Шедевр неоготики',
                 link: '/places/article6'
             }
         ],

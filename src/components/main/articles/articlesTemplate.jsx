@@ -35,21 +35,21 @@ export default class ArticlesTemplate extends Component {
                         {   this.props.text1 ?
                             <p> {article.text1} </p> :
                             article.text1 !== undefined ?
-                            article.text1.split('\n').map( (text) => <p>{text}</p>) :
+                            article.text1.split('\n').map( text => <p>{text}</p>) :
                             null }
 
                         <h3> {article.secondH2} </h3>
                         {   this.props.text2 ?
                             <p> {article.text2} </p> :
                             article.text2 !== undefined ?
-                            article.text2.split('\n').map( (text) => <p>{text}</p>) :
+                            article.text2.split('\n').map( text => <p>{text}</p>) :
                             null }
 
                         <h3> {article.thirdH2} </h3>
                         {   this.props.text3 ?
                             <p> {article.text3} </p> :
                             article.text3 !== undefined ?
-                            article.text3.split('\n').map( (text) => <p>{text}</p>) :
+                            article.text3.split('\n').map( text => <p>{text}</p>) :
                             null }
 
                         <br/>

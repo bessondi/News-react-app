@@ -15,7 +15,7 @@ class Home extends Component {
         return (
             <main id='homeSection'>
                 <div className={mainHomeStyle.ImgSection}>
-                    <img src={homeImg} alt='img' className={mainHomeStyle.Img}/>
+                    <img src={homeImg} alt='img' className={mainHomeStyle.ImgHome}/>
                 </div>
 
                 <News disableBtnAddNews={true} />

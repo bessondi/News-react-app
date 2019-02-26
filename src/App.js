@@ -15,9 +15,7 @@ import './App.css';
 
 // TODO:
 // think about homepage image
-// fill texts to the articles
 // add animations
-// add weather in header
 // add map in places
 
 
