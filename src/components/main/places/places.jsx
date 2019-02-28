@@ -17,42 +17,43 @@ export default class Places extends Component {
             {
                 id: 1,
                 picture: placesImg1,
-                title: 'Сквер знаков зодиака',
-                text: '12 колонн',
+                title: 'Казанский кафедральный собор',
+                text: 'Ампир и классицизм',
                 link: '/places/article1'
             },
             {
                 id: 2,
                 picture: placesImg2,
-                title: 'Главпочтамт',
-                text: 'Стеклянный купол-фонарь и первый атриум Петербурга',
+                title: 'Петропавловская крепость',
+                text: 'Историческое ядро города.',
                 link: '/places/article2'
             },
             {
                 id: 3,
                 picture: placesImg3,
-                title: 'Усадьба Демидовых',
-                text: 'Особняк в классическом стиле',
+                title: 'Исаакиевский собор',
+                text: 'Шедевр архитектуры',
                 link: '/places/article3'
             },
             {
                 id: 4,
                 picture: placesImg4,
-                title: 'Музей-фотоателье Карла Буллы',
+                title: 'Петергоф',
+                text: 'Императорская загородная резиденция',
                 link: '/places/article4'
             },
             {
                 id: 5,
                 picture: placesImg5,
-                title: 'Доходный дом К. И. Розенштейна',
-                text: 'Some text 5.',
+                title: 'Государственный Эрмитаж',
+                text: 'Музей изобразительного и декоративно-прикладного искусства',
                 link: '/places/article5'
             },
             {
                 id: 6,
                 picture: placesImg6,
-                title: 'Вокзал станции Новый Петергоф',
-                text: 'Шедевр неоготики',
+                title: 'Мариинский театр',
+                text: 'Один из ведущих музыкальных театров России и мира',
                 link: '/places/article6'
             }
         ],

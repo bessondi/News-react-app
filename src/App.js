@@ -13,12 +13,6 @@ import Footer from './components/footer/footer';
 import './App.css';
 
 
-// TODO:
-// think about homepage image
-// add animations
-// add map in places
-
-
 class App extends Component {
     render() {
         return (

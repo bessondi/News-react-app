@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Route} from "react-router-dom";
 import CloseArticleBtn from "./closeArticleBtn";
+import Map from "./articleMaps";
 import DiffPublishDates from "./diffPublishDates";
 
 import styled from 'styled-components';
@@ -14,7 +15,7 @@ export default class ArticlesTemplate extends Component {
     }
 
     render() {
-        const { articles, closeArticlePath } = this.props;
+        const { articles, closeArticlePath, isGoogleMapEnable }  = this.props;
 
         const ArticleTemplate = articles.map( (article, id) => {
 
@@ -35,22 +36,24 @@ export default class ArticlesTemplate extends Component {
                         {   this.props.text1 ?
                             <p> {article.text1} </p> :
                             article.text1 !== undefined ?
-                            article.text1.split('\n').map( text => <p>{text}</p>) :
+                            article.text1.split('\n').map( (text, id) => <p key={id}>{text}</p>) :
                             null }
 
                         <h3> {article.secondH2} </h3>
                         {   this.props.text2 ?
                             <p> {article.text2} </p> :
                             article.text2 !== undefined ?
-                            article.text2.split('\n').map( text => <p>{text}</p>) :
+                            article.text2.split('\n').map( (text, id) => <p key={id}>{text}</p>) :
                             null }
 
                         <h3> {article.thirdH2} </h3>
                         {   this.props.text3 ?
                             <p> {article.text3} </p> :
                             article.text3 !== undefined ?
-                            article.text3.split('\n').map( text => <p>{text}</p>) :
+                            article.text3.split('\n').map( (text, id) => <p key={id}>{text}</p>) :
                             null }
+
+                        { isGoogleMapEnable === true ? <Map gMap={article.gMap}/> : null }
 
                         <br/>
                         <time className={singleArticle.publish}>
