@@ -3,9 +3,9 @@ import headerStyle from './header.module.css';
 
 class Weather extends Component {
     state = {
-        temperature: undefined,
-        description: undefined,
-        icon: undefined
+        temperature: '',
+        description: '',
+        icon: '03d'
     };
 
     componentDidMount() {
@@ -26,8 +26,8 @@ class Weather extends Component {
                 <img className={headerStyle.weatherImg} src={`http://openweathermap.org/img/w/${this.state.icon}.png`} alt={`${this.state.description}`} />
 
                 { this.state.temperature <= 0 ?
-                <p className={headerStyle.weatherTextColor}>{this.state.temperature}&#8451;</p> :
-                <p className={headerStyle.weatherTextColor}>+{this.state.temperature}&#8451;</p>  }
+                <p className={headerStyle.weatherTextColor}> {this.state.temperature}&#8451; </p> :
+                <p className={headerStyle.weatherTextColor}> + {this.state.temperature}&#8451; </p>  }
             </div>
         )
     }
