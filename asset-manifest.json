@@ -1,7 +1,7 @@
 {
-  "main.css": "/News-react-app/static/css/main.ed3c4599.chunk.css",
-  "main.js": "/News-react-app/static/js/main.1100a796.chunk.js",
-  "main.js.map": "/News-react-app/static/js/main.1100a796.chunk.js.map",
+  "main.css": "/News-react-app/static/css/main.5aa3944f.chunk.css",
+  "main.js": "/News-react-app/static/js/main.8efcd5e7.chunk.js",
+  "main.js.map": "/News-react-app/static/js/main.8efcd5e7.chunk.js.map",
   "static/js/1.3761a8b3.chunk.js": "/News-react-app/static/js/1.3761a8b3.chunk.js",
   "static/js/1.3761a8b3.chunk.js.map": "/News-react-app/static/js/1.3761a8b3.chunk.js.map",
   "runtime~main.js": "/News-react-app/static/js/runtime~main.3c6a5fbf.js",
@@ -44,8 +44,8 @@
   "static/media/Food9.jpg": "/News-react-app/static/media/Food9.0fa3bbba.jpg",
   "static/media/Home_cr.jpg": "/News-react-app/static/media/Home_cr.affb3a48.jpg",
   "static/media/App.css": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf",
-  "static/css/main.ed3c4599.chunk.css.map": "/News-react-app/static/css/main.ed3c4599.chunk.css.map",
+  "static/css/main.5aa3944f.chunk.css.map": "/News-react-app/static/css/main.5aa3944f.chunk.css.map",
   "index.html": "/News-react-app/index.html",
-  "precache-manifest.59020d3b25c45198b4f2cbf833d57e07.js": "/News-react-app/precache-manifest.59020d3b25c45198b4f2cbf833d57e07.js",
+  "precache-manifest.88b70bd7d89519349637d18b6c0b786d.js": "/News-react-app/precache-manifest.88b70bd7d89519349637d18b6c0b786d.js",
   "service-worker.js": "/News-react-app/service-worker.js"
 }
