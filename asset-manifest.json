@@ -1,7 +1,7 @@
 {
-  "main.css": "/News-react-app/static/css/main.bfca6c50.chunk.css",
-  "main.js": "/News-react-app/static/js/main.0ed6f476.chunk.js",
-  "main.js.map": "/News-react-app/static/js/main.0ed6f476.chunk.js.map",
+  "main.css": "/News-react-app/static/css/main.96768572.chunk.css",
+  "main.js": "/News-react-app/static/js/main.ce45d634.chunk.js",
+  "main.js.map": "/News-react-app/static/js/main.ce45d634.chunk.js.map",
   "static/js/1.b04bf461.chunk.js": "/News-react-app/static/js/1.b04bf461.chunk.js",
   "static/js/1.b04bf461.chunk.js.map": "/News-react-app/static/js/1.b04bf461.chunk.js.map",
   "runtime~main.js": "/News-react-app/static/js/runtime~main.3c6a5fbf.js",
@@ -44,13 +44,13 @@
   "static/media/Food9.jpg": "/News-react-app/static/media/Food9.0fa3bbba.jpg",
   "static/media/Home_cr.jpg": "/News-react-app/static/media/Home_cr.affb3a48.jpg",
   "static/media/travolta-crunched.gif": "/News-react-app/static/media/travolta-crunched.2ea66c06.gif",
-  "static/media/404.svg": "/News-react-app/static/media/404.0864f63a.svg",
+  "static/media/404.svg": "/News-react-app/static/media/404.a63d4d6d.svg",
   "static/media/facebook.svg": "/News-react-app/static/media/facebook.218c0496.svg",
   "static/media/telegram.svg": "/News-react-app/static/media/telegram.52140ade.svg",
   "static/media/instagram.svg": "/News-react-app/static/media/instagram.197d29ad.svg",
   "static/media/App.css": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf",
-  "static/css/main.bfca6c50.chunk.css.map": "/News-react-app/static/css/main.bfca6c50.chunk.css.map",
+  "static/css/main.96768572.chunk.css.map": "/News-react-app/static/css/main.96768572.chunk.css.map",
   "index.html": "/News-react-app/index.html",
-  "precache-manifest.c4624691a0ab856471d7d8ed80dd3b60.js": "/News-react-app/precache-manifest.c4624691a0ab856471d7d8ed80dd3b60.js",
+  "precache-manifest.5d37a7b0a6d5cefd0f72cdf4ed2086fa.js": "/News-react-app/precache-manifest.5d37a7b0a6d5cefd0f72cdf4ed2086fa.js",
   "service-worker.js": "/News-react-app/service-worker.js"
 }

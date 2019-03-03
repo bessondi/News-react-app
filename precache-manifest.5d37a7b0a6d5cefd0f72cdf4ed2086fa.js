@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/City1.7448df6e.jpg"
   },
   {
-    "revision": "0ed6f476450cb28d13ae",
-    "url": "/News-react-app/static/css/main.bfca6c50.chunk.css"
+    "revision": "ce45d634e3a4c39dbf59",
+    "url": "/News-react-app/static/css/main.96768572.chunk.css"
   },
   {
     "revision": "b04bf461439f03cc3a51",
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Entt9.38c2cf90.jpg"
   },
   {
-    "revision": "0ed6f476450cb28d13ae",
-    "url": "/News-react-app/static/js/main.0ed6f476.chunk.js"
+    "revision": "ce45d634e3a4c39dbf59",
+    "url": "/News-react-app/static/js/main.ce45d634.chunk.js"
   },
   {
     "revision": "40cd05ab2ca4716374051d3b03298e8f",
@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/travolta-crunched.2ea66c06.gif"
   },
   {
-    "revision": "0864f63afc4d6d3498fc3faf223a694e",
-    "url": "/News-react-app/static/media/404.0864f63a.svg"
+    "revision": "a63d4d6d5079c8d13cc248cce4f93a7d",
+    "url": "/News-react-app/static/media/404.a63d4d6d.svg"
   },
   {
     "revision": "218c0496c34c8bbc11cb32f0138cf9d2",
@@ -184,12 +184,12 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/instagram.197d29ad.svg"
   },
   {
-    "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
-    "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
-  },
-  {
     "revision": "1f73bfb5dafd4a5613dd3cfc09a8562b",
     "url": "/News-react-app/static/media/SofiaProRegular.1f73bfb5.ttf"
+  },
+  {
+    "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
+    "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
   },
   {
     "revision": "6dddddc0b4726becc525fc7794cfcf6b",
@@ -200,7 +200,7 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf"
   },
   {
-    "revision": "ee8c9d96d1ebad93a4db2afb701fb842",
+    "revision": "067bdb82de553c95f2ac3b5577481bf9",
     "url": "/News-react-app/index.html"
   }
 ];
