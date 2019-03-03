@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "802249cf213b7348c3a65d99de1adf4d",
-    "url": "/News-react-app/static/media/Entt8.802249cf.jpg"
+    "revision": "7448df6e3b5657f40c4650e6c569a841",
+    "url": "/News-react-app/static/media/City1.7448df6e.jpg"
   },
   {
-    "revision": "8efcd5e7a794e74ed7b6",
-    "url": "/News-react-app/static/css/main.5aa3944f.chunk.css"
+    "revision": "0ed6f476450cb28d13ae",
+    "url": "/News-react-app/static/css/main.bfca6c50.chunk.css"
   },
   {
-    "revision": "3761a8b3bc6efa8e61c3",
-    "url": "/News-react-app/static/js/1.3761a8b3.chunk.js"
+    "revision": "b04bf461439f03cc3a51",
+    "url": "/News-react-app/static/js/1.b04bf461.chunk.js"
   },
   {
     "revision": "3c6a5fbfb7fb1647dfb1",
@@ -92,16 +92,16 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Entt7.35ef339a.jpg"
   },
   {
-    "revision": "8efcd5e7a794e74ed7b6",
-    "url": "/News-react-app/static/js/main.8efcd5e7.chunk.js"
+    "revision": "802249cf213b7348c3a65d99de1adf4d",
+    "url": "/News-react-app/static/media/Entt8.802249cf.jpg"
   },
   {
     "revision": "38c2cf9075f60afd9a13de57f0c087f3",
     "url": "/News-react-app/static/media/Entt9.38c2cf90.jpg"
   },
   {
-    "revision": "7448df6e3b5657f40c4650e6c569a841",
-    "url": "/News-react-app/static/media/City1.7448df6e.jpg"
+    "revision": "0ed6f476450cb28d13ae",
+    "url": "/News-react-app/static/js/main.0ed6f476.chunk.js"
   },
   {
     "revision": "40cd05ab2ca4716374051d3b03298e8f",
@@ -164,6 +164,26 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/Home_cr.affb3a48.jpg"
   },
   {
+    "revision": "2ea66c06db1fe4ed161394e1cf0a84e4",
+    "url": "/News-react-app/static/media/travolta-crunched.2ea66c06.gif"
+  },
+  {
+    "revision": "0864f63afc4d6d3498fc3faf223a694e",
+    "url": "/News-react-app/static/media/404.0864f63a.svg"
+  },
+  {
+    "revision": "218c0496c34c8bbc11cb32f0138cf9d2",
+    "url": "/News-react-app/static/media/facebook.218c0496.svg"
+  },
+  {
+    "revision": "52140ade41492c9bb4560a9508e2a1d5",
+    "url": "/News-react-app/static/media/telegram.52140ade.svg"
+  },
+  {
+    "revision": "197d29ad919cc0e71a206613372a8858",
+    "url": "/News-react-app/static/media/instagram.197d29ad.svg"
+  },
+  {
     "revision": "0d987efe9bc0b858a7bc0367c2d5922c",
     "url": "/News-react-app/static/media/FuturaPT-Book.0d987efe.ttf"
   },
@@ -180,7 +200,7 @@ self.__precacheManifest = [
     "url": "/News-react-app/static/media/ProximaNova-Semibold.df8c6264.ttf"
   },
   {
-    "revision": "efb854456242c79d2be328e11c1bf726",
+    "revision": "ee8c9d96d1ebad93a4db2afb701fb842",
     "url": "/News-react-app/index.html"
   }
 ];
