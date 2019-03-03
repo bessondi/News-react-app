@@ -16,21 +16,21 @@ const Columns = () => {
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                    <span className={footerStyle.boldStyle}>Some name2</span>
+                    <span className={footerStyle.boldStyle}>Some name 2</span>
                     <ul>
-                        <li><Link to="empty">Some text 1</Link></li>
-                        <li><Link to="empty">Some text 2</Link></li>
-                        <li><Link to="empty">Some text 3</Link></li>
-                        <li><Link to="empty">Some text 4</Link></li>
+                        <li><Link to="empty">Text 1</Link></li>
+                        <li><Link to="empty">Text 2</Link></li>
+                        <li><Link to="empty">Text 3</Link></li>
+                        <li><Link to="empty">Text 4</Link></li>
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                    <span className={footerStyle.boldStyle}>Some name3</span>
+                    <span className={footerStyle.boldStyle}>Some name 3</span>
                     <ul>
-                        <li><Link to="empty">Some text 1</Link></li>
-                        <li><Link to="empty">Some text 2</Link></li>
-                        <li><Link to="empty">Some text 3</Link></li>
-                        <li><Link to="empty">Some text 4</Link></li>
+                        <li><Link to="empty">Text 1</Link></li>
+                        <li><Link to="empty">Text 2</Link></li>
+                        <li><Link to="empty">Text 3</Link></li>
+                        <li><Link to="empty">Text 4</Link></li>
                     </ul>
                 </div>
                 {/*<div className={footerStyle.fourColumns}>*/}

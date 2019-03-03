@@ -77,12 +77,12 @@
     }
 
     .mailFont a, .listItemsActive li a  {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: #fff;
     }
 
     .linksSmall a {
-        margin: 0 15px;
+        margin: 0 12px;
     }
 }
 

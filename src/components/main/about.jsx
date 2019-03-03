@@ -12,7 +12,8 @@ const About = () => {
         color: #3f3f41;
         max-width: 600px;
         text-align: left;
-        margin: 150px auto 50px;
+        margin: 0 auto 50px;
+        padding: 150px 20px 0;
         `;
 
     const TextAbout = styled.p`

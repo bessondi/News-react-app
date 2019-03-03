@@ -126,14 +126,14 @@ export default class News extends Component {
                             {gridComponent}
                         </div>
                     </div>
-                </main>
 
-                 {
-                     this.props.disableBtnAddNews ? null :
-                     elements.length === 6 ?
-                     <button onClick={ this.addNews } className={mainNewsStyle.addNews}>Показать все новости</button> :
-                     <p className={mainNewsStyle.newsRunOut}>Больше новостей нет :(</p>
-                 }
+                    {
+                        this.props.disableBtnAddNews ? null :
+                            elements.length === 6 ?
+                                <button onClick={ this.addNews } className={mainNewsStyle.addNews}>Показать все новости</button> :
+                                <p className={mainNewsStyle.newsRunOut}>Больше новостей нет :(</p>
+                    }
+                </main>
 
             </React.Fragment>
         );

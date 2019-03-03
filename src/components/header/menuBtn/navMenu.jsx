@@ -40,7 +40,7 @@ class BurgerBtn extends Component {
                         </li>
                         <li className={navMenuActive.linksSmall}>
                             <a href="https://www.facebook.com/bessondi">FACEBOOK</a>
-                            <a href="https://vk.com/bessondi">VK</a>
+                            <a href="https://t.me/bessondi">TELEGRAM</a>
                             <a href="https://www.instagram.com/bessondi">INSTAGRAM</a>
                         </li>
                     </ul>

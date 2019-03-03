@@ -9,7 +9,7 @@ import Entertainment from './components/main/entertainment/entertainment';
 import Places from './components/main/places/places';
 import Food from './components/main/food/food';
 import About from './components/main/about';
-import Page404 from './components/main/empty404';
+import Page404 from './components/main/page404';
 import Footer from './components/footer/footer';
 
 import './App.css';
