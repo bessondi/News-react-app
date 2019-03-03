@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import SI1imgSrc from "../../ico/fb.png";
-import SI2imgSrc from "../../ico/vk.png";
-import SI3imgSrc from "../../ico/inst.png";
+import SI1imgSrc from "../../ico/facebook.svg";
+import SI2imgSrc from "../../ico/telegram.svg";
+import SI3imgSrc from "../../ico/instagram.svg";
 
 class SocialIcons extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class SocialIcons extends Component {
             ],
             links: [
                 "https://www.facebook.com/bessondi",
-                "https://vk.com/bessondi",
+                "https://t.me/bessondi",
                 "https://www.instagram.com/bessondi"
             ]
         }

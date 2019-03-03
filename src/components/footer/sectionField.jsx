@@ -1,6 +1,6 @@
 import React from 'react';
-import footerStyle from "./footer.module.css";
 import { HashLink as Link } from 'react-router-hash-link';
+import footerStyle from "./footer.module.css";
 
 const Columns = () => {
     return (
@@ -16,29 +16,30 @@ const Columns = () => {
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                    <span className={footerStyle.boldStyle}>Name</span>
+                    <span className={footerStyle.boldStyle}>Some name2</span>
                     <ul>
-                        <li><a href="/news">text 1</a></li>
-                        <li><a href="/entertainment">text 2</a></li>
-                        <li><a href="/places">text 3</a></li>
-                        <li><a href="/food">text 3</a></li>
+                        <li><Link to="empty">Some text 1</Link></li>
+                        <li><Link to="empty">Some text 2</Link></li>
+                        <li><Link to="empty">Some text 3</Link></li>
+                        <li><Link to="empty">Some text 4</Link></li>
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
-                    <span className={footerStyle.boldStyle}>Name</span>
+                    <span className={footerStyle.boldStyle}>Some name3</span>
                     <ul>
-                        <li><a href="#s">text 1</a></li>
-                        <li><a href="#s">text 2</a></li>
-                        <li><a href="#s">text 3</a></li>
-                        <li><a href="#s">text 3</a></li>
+                        <li><Link to="empty">Some text 1</Link></li>
+                        <li><Link to="empty">Some text 2</Link></li>
+                        <li><Link to="empty">Some text 3</Link></li>
+                        <li><Link to="empty">Some text 4</Link></li>
                     </ul>
                 </div>
                 {/*<div className={footerStyle.fourColumns}>*/}
-                    {/*<span className={footerStyle.boldStyle}>Name</span>*/}
+                    {/*<span className={footerStyle.boldStyle}>Some name4</span>*/}
                     {/*<ul>*/}
                         {/*<li><a href="#s">text 1</a></li>*/}
                         {/*<li><a href="#s">text 2</a></li>*/}
                         {/*<li><a href="#s">text 3</a></li>*/}
+                        {/*<li><a href="#s">text 4</a></li>*/}
                     {/*</ul>*/}
                 {/*</div>*/}
             </div>

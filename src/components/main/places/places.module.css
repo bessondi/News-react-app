@@ -74,7 +74,7 @@ h3 {
 @media screen and (min-width: 640px) {
     .home {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: minmax(300px, auto) minmax(300px, auto);
+        grid-template-rows: minmax(300px, auto) minmax(300px, auto) minmax(300px, auto);
         margin: auto;
     }
 
@@ -128,7 +128,7 @@ h3 {
     }
 
     .pictureWrap:nth-child(3) {
-        grid-column: 3/6;
+        grid-column: 3/5;
         grid-row: 2;
     }
 

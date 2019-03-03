@@ -131,7 +131,7 @@ export default class News extends Component {
                  {
                      this.props.disableBtnAddNews ? null :
                      elements.length === 6 ?
-                     <button onClick={ this.addNews } className={mainNewsStyle.addNews}>Показать еще новости</button> :
+                     <button onClick={ this.addNews } className={mainNewsStyle.addNews}>Показать все новости</button> :
                      <p className={mainNewsStyle.newsRunOut}>Больше новостей нет :(</p>
                  }
 
