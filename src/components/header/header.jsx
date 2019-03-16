@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 import Today from "./date";
 import Weather from "./weather";
+import Currency from "./currency";
 import BurgerBtn from './menuBtn/navMenu';
 
 import headerStyle from './header.module.css';
+
 
 class Header extends Component {
     render() {
@@ -26,11 +28,14 @@ class Header extends Component {
 
                     <div className={headerStyle.headerRight}>
                         <Today/>
-                        <Weather/>
                     </div>
 
                     <BurgerBtn/>
                 </nav>
+                <div className={headerStyle.headerServices}>
+                    <Currency/>
+                    <Weather/>
+                </div>
             </header>
         );
     }
