@@ -103,13 +103,13 @@ export default class News extends Component {
                 link: '/news/article12'
             }
         ]
-    };
+    }
 
     addNews = () => {
         let {elements, hiddenElements} = this.state;
         elements.push(...hiddenElements);
         this.setState({ elements: elements })
-    };
+    }
 
     render() {
         const { gridStyle, elements } = this.state;
@@ -136,6 +136,6 @@ export default class News extends Component {
                 </main>
 
             </React.Fragment>
-        );
+        )
     }
 }

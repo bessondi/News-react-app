@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// import aboutStyles from './about.module.css';
-
 
 const About = () => {
 

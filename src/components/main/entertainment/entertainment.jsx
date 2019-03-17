@@ -82,7 +82,7 @@ export default class Entertainment extends Component {
             }
         ],
         gridStyle: mainEnttStyle
-    };
+    }
 
     render() {
         const { elements, gridStyle } = this.state;
@@ -103,6 +103,6 @@ export default class Entertainment extends Component {
             </main>
 
             </React.Fragment>
-        );
+        )
     }
 }

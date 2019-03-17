@@ -18,19 +18,19 @@ const Columns = () => {
                 <div className={footerStyle.fourColumns}>
                     <span className={footerStyle.boldStyle}>Some name 2</span>
                     <ul>
-                        <li><Link to="empty">Text 1</Link></li>
-                        <li><Link to="empty">Text 2</Link></li>
-                        <li><Link to="empty">Text 3</Link></li>
-                        <li><Link to="empty">Text 4</Link></li>
+                        <li><Link to="404">Text 1</Link></li>
+                        <li><Link to="404">Text 2</Link></li>
+                        <li><Link to="404">Text 3</Link></li>
+                        <li><Link to="404">Text 4</Link></li>
                     </ul>
                 </div>
                 <div className={footerStyle.fourColumns}>
                     <span className={footerStyle.boldStyle}>Some name 3</span>
                     <ul>
-                        <li><Link to="empty">Text 1</Link></li>
-                        <li><Link to="empty">Text 2</Link></li>
-                        <li><Link to="empty">Text 3</Link></li>
-                        <li><Link to="empty">Text 4</Link></li>
+                        <li><Link to="404">Text 1</Link></li>
+                        <li><Link to="404">Text 2</Link></li>
+                        <li><Link to="404">Text 3</Link></li>
+                        <li><Link to="404">Text 4</Link></li>
                     </ul>
                 </div>
                 {/*<div className={footerStyle.fourColumns}>*/}

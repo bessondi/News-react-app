@@ -82,7 +82,7 @@ export default class Food extends Component {
             }
         ],
         gridStyle: mainFoodStyle
-    };
+    }
 
     render() {
         const { elements, gridStyle } = this.state;
@@ -102,6 +102,6 @@ export default class Food extends Component {
             </main>
 
             </React.Fragment>
-        );
+        )
     }
 }

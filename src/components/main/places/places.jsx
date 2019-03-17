@@ -58,7 +58,7 @@ export default class Places extends Component {
             }
         ],
         gridStyle: mainPlacesStyle
-    };
+    }
 
     render() {
         const { elements, gridStyle } = this.state;
@@ -78,6 +78,6 @@ export default class Places extends Component {
             </main>
 
             </React.Fragment>
-        );
+        )
     }
 }

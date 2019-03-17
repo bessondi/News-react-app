@@ -23,7 +23,7 @@ class Weather extends Component {
     render() {
         return (
             <div className={headerStyle.weather}>
-                {/*<p>В городе { this.state.description }</p>*/}
+                <p>{ this.state.description }</p>
                 { this.state.icon !== undefined ?
                     <img className={headerStyle.weatherImg}
                          src={`http://openweathermap.org/img/w/${this.state.icon}.png`}

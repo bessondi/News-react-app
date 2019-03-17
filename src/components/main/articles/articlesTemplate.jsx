@@ -10,6 +10,13 @@ import singleArticle from "./article.module.css";
 
 export default class ArticlesTemplate extends Component {
 
+    // componentDidUpdate() {
+    //     let windowPosition = window.scrollY;
+    //     if (windowPosition > 500) {
+    //         window.scrollTo(0, 0)
+    //     }
+    // }
+
     componentDidUpdate() {
         window.scrollTo(0, 0)
     }
