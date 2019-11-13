@@ -1,3 +1,5 @@
 Responsive news react app.
 
-<a href='https://bessondi.github.io/News-react-app/'>App</a>
+[The News App](https://bessondi.github.io/News-react-app/)
+
+![Preview App](NewsApp.gif)
